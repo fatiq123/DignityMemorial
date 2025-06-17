@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebration of Life</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+
+
+    <!-- Header -->
+     <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-serif text-gray-800">Dignity<sup class="text-sm">®</sup></h1>
+                    <span class="text-sm text-gray-600 ml-2">MEMORIAL</span>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <div class="relative group">
+                        <button id="planDropdownBtn"
+                            class="flex items-center space-x-1 text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors">
+                            <span class="text-sm font-medium tracking-wide">PLAN A FUNERAL OR CREMATION</span>
+                            <svg class="w-4 h-4 transition-transform duration-200" id="planDropdownArrow" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <!-- Dropdown Menu -->
+                        <div id="planDropdown"
+                            class="absolute top-full left-0 w-96 bg-white shadow-lg border border-gray-200 opacity-0 invisible transform translate-y-2 transition-all duration-200 z-50">
+                            <div class="p-8">
+                                <div class="grid grid-cols-2 gap-8">
+                                    <!-- Immediate Need Column -->
+                                    <div>
+                                        <h3 class="text-xl font-serif text-gray-800 mb-4">Immediate Need</h3>
+                                        <a href="#"
+                                            class="block text-teal-600 hover:text-teal-700 text-sm font-medium border-b border-teal-600 pb-1 mb-4 transition-colors">
+                                            Death has occurred or is near
+                                        </a>
+                                    </div>
+
+                                    <!-- Plan Ahead Column -->
+                                    <div>
+                                        <h3 class="text-xl font-serif text-gray-800 mb-4">Plan Ahead</h3>
+                                        <a href="#"
+                                            class="block text-teal-600 hover:text-teal-700 text-sm font-medium border-b border-teal-600 pb-1 mb-4 transition-colors">
+                                            Pre-plan a funeral or cremation
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#"
+                        class="text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors text-sm font-medium tracking-wide">
+                        FIND OBITUARIES AND SERVICES
+                    </a>
+
+                    <a href="#"
+                        class="text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors text-sm font-medium tracking-wide">
+                        FIND FUNERAL HOMES OR CEMETERIES
+                    </a>
+
+                    <div class="relative group">
+                        <button id="resourcesDropdownBtn"
+                            class="flex items-center space-x-1 text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors">
+                            <span class="text-sm font-medium tracking-wide">IDEAS AND RESOURCES</span>
+                            <svg class="w-4 h-4 transition-transform duration-200" id="resourcesDropdownArrow"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <!-- Resources Dropdown Menu -->
+                        <div id="resourcesDropdown"
+                            class="absolute top-full right-0 w-screen max-w-5xl bg-white shadow-lg border border-gray-200 opacity-0 invisible transform translate-y-2 transition-all duration-200 z-50">
+                            <div class="p-8">
+                                <div class="flex gap-8">
+                                    <!-- Left Column - Featured Content -->
+                                    <div class="w-1/3">
+                                        <div class="mb-6">
+                                            <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=300&h=200&fit=crop"
+                                                alt="Elderly couple on bench"
+                                                class="w-full h-32 object-cover rounded-lg mb-4">
+                                            <p class="text-xs text-gray-500 uppercase tracking-wide mb-2">FREE PRICING
+                                                GUIDE:</p>
+                                            <h3 class="text-lg font-serif text-gray-800 mb-3">Why pre-plan a funeral or
+                                                cremation?</h3>
+                                            <a href="#"
+                                                class="text-teal-600 hover:text-teal-700 text-sm font-medium">Learn
+                                                More</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Middle Column -->
+                                    <div class="w-1/3">
+                                        <div class="space-y-4">
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Prepaid
+                                                Funeral Plans</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Funeral
+                                                & Cremation Costs</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Cemetery
+                                                & Cremation Property</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Cremation</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Celebration
+                                                of Life</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Right Column -->
+                                    <div class="w-1/3">
+                                        <div class="space-y-4">
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Veterans
+                                                Burials & Funerals</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">When
+                                                Death Has Occurred</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Grief
+                                                & Sympathy</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Memorial
+                                                Services</a>
+                                        </div>
+
+                                        <div class="mt-8 pt-6 border-t border-gray-200">
+                                            <a href="#"
+                                                class="flex items-center text-teal-600 hover:text-teal-700 text-sm font-medium uppercase tracking-wide">
+                                                VIEW ALL RESOURCES
+                                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor"
+                                                    viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <button class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <script src="../script.js"></script>
+
+
+
+
+
+
+
+    <!-- Section 1: What is a celebration of life? -->
+    <section class="py-16 px-4 bg-gradient-to-b from-green-50 to-gray-50">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-light text-amber-700 mb-8 italic">
+                What is a celebration of life?
+            </h2>
+
+
+            <div class="max-w-2xl mx-auto">
+                <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                    A celebration of life is a less formal alternative to a traditional funeral ceremony.
+                    It focuses on honoring and celebrating the happy memories and positive impact
+                    the departed person had during their lifetime. These ceremonies can be held anywhere
+                    and at any time that feels right for family and friends.
+                </p>
+
+                <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                    Unlike traditional funerals, celebrations of life are typically more personalized
+                    and less structured. They might include sharing stories, displaying photos,
+                    playing favorite music, or participating in activities the person enjoyed.
+                </p>
+
+                <p class="text-gray-700 text-sm leading-relaxed">
+                    The goal is to create a meaningful tribute that reflects the unique personality
+                    and legacy of your loved one.
+                </p>
+            </div>
+
+            <!-- Decorative leaf icon -->
+            <div class="mb-0">
+                <!-- <svg class="w-16 h-16 mx-auto text-green-300" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z" />
+                </svg> -->
+                <img src="./images/buterfly.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: We are celebration of life planning experts -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl md:text-3xl font-light text-gray-800 mb-8">
+                We are celebration of life planning experts.
+            </h2>
+
+            <div class="max-w-3xl mx-auto mb-12">
+                <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                    Our team is expert in planning celebrations of life, helping create meaningful and healing
+                    experiences that truly honor your loved one. We understand how important it is to celebrate
+                    a life well-lived, and we're here to guide you through every step of the planning process.
+                </p>
+
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    Whether you envision an intimate home gathering, an outdoor memorial in nature,
+                    or a larger venue celebration, we help you create personalized tributes that capture
+                    the essence of your loved one's spirit and bring comfort to family and friends.
+                    From venue selection to meaningful activities, we handle all the details
+                    so you can focus on what matters most.
+                </p>
+            </div>
+
+            <button class="bg-teal-400 hover:bg-teal-500 px-8 py-3  text-sm font-medium transition-colors text-black">
+                LEARN MORE ABOUT US
+            </button>
+
+            <img src="./images/get_a_free_guide_and_a_quote.png" alt="Celebration of Life Image">
+
+        </div>
+    </section>
+
+    <!-- Section 3: Your personalized experience -->
+    <section class="py-16 px-4 bg-gray-50">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl md:text-3xl font-light text-gray-800 mb-8 italic">
+                Your personalized experience is our standard of care.
+            </h2>
+
+            <div class="max-w-2xl mx-auto mb-12">
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    We believe that every celebration of life should be as unique as the person being honored.
+                    Our dedicated team works closely with you to understand your loved one's personality,
+                    interests, and values, ensuring that every detail reflects their individual story and brings
+                    meaningful comfort to those who gather to remember them.
+                </p>
+            </div>
+
+            <!-- Multiple Cards Example (Grid Layout) -->
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl font-light text-gray-800 mb-8 text-center">Our Services</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Card 1 -->
+                    <a href="#meaningful-music" class="block group cursor-pointer">
+                        <div
+                            class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group-hover:transform group-hover:scale-105">
+                            <div class="relative overflow-hidden">
+                                <img src="./images/meaningful_music.jpg" alt="Meaningful music"
+                                    class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
+                                <div
+                                    class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300">
+                                </div>
+                            </div>
+                            <div class="p-6 text-center">
+                                <h3 class="text-lg font-light text-gray-700 italic">Meaningful music</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 2 -->
+                    <a href="#cherished-memories" class="block group cursor-pointer">
+                        <div
+                            class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group-hover:transform group-hover:scale-105">
+                            <div class="relative overflow-hidden">
+                                <img src="./images/cherished_memories.jpg" alt="Cherished memories"
+                                    class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
+                                <div
+                                    class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300">
+                                </div>
+                            </div>
+                            <div class="p-6 text-center">
+                                <h3 class="text-lg font-light text-gray-700 italic">Cherished memories</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 3 -->
+                    <a href="#personalized-message" class="block group cursor-pointer">
+                        <div
+                            class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group-hover:transform group-hover:scale-105">
+                            <div class="relative overflow-hidden">
+                                <img src="./images/a_personalized_message.jpg" alt="A personalized message"
+                                    class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
+                                <div
+                                    class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300">
+                                </div>
+                            </div>
+                            <div class="p-6 text-center">
+                                <h3 class="text-lg font-light text-gray-700 italic">A personalized message</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Music Services Section -->
+    <section class="px-4 bg-stone-200">
+        <div class="max-w-7xl mx-auto">
+            <!-- Header with music cards -->
+            <div class="text-center mb-16">
+                <div class="mb-8">
+                    <span class="text-xs uppercase tracking-wide text-teal-600 font-medium">MEANINGFUL MUSIC</span>
+                </div>
+
+                <p class="text-gray-700 text-sm leading-relaxed max-w-md mx-auto mb-8">
+                    Even live musicians and singers can play any songs they'd like or a different
+                    playlist for every aspect of the celebration.
+                </p>
+
+                <!-- Music Service Cards -->
+                <div class="flex justify-center gap-4 mb-16">
+                    <!-- Celebration of life songs card -->
+                    <div class="relative group cursor-pointer">
+                        <div class="w-40 h-32 bg-gray-900 rounded-lg overflow-hidden">
+                            <img src="./images/violin.jpg" alt="Celebration of life songs"
+                                class="w-full h-full object-cover opacity-80">
+                            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+                            <div class="absolute bottom-3 left-3 text-white">
+                                <h3 class="text-sm font-medium">Celebration of life songs</h3>
+                                <p class="text-xs opacity-90">LEARN MORE</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Funeral music card -->
+                    <div class="relative group cursor-pointer">
+                        <div class="w-40 h-32 bg-gray-900 rounded-lg overflow-hidden">
+                            <img src="./images/guitar.jpg" alt="Funeral music"
+                                class="w-full h-full object-cover opacity-80">
+                            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+                            <div class="absolute bottom-3 left-3 text-white">
+                                <h3 class="text-sm font-medium">Funeral music</h3>
+                                <p class="text-xs opacity-90">LEARN MORE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+        </div>
+    </section>
+
+
+    <section class="py-16 px-4 bg-white">
+        <!-- Photo Display Section -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+            <!-- Left side - Text content -->
+            <div class="space-y-6">
+                <div class="mb-4">
+                    <span class="text-xs uppercase tracking-wide text-teal-600 font-medium">OVER-SIZED
+                        SERVICES</span>
+                </div>
+
+                <h2 class="text-2xl md:text-3xl font-light text-gray-800">
+                    A curated display of photographs can help friends family and friends to remember special moments
+                    and defining details.
+                </h2>
+            </div>
+
+            <!-- Right side - Photo display image -->
+            <div class="relative">
+                <img src="./images/cherished_memories_new.jpg" alt="Photo display with memories"
+                    class="w-full h-auto rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Text Section -->
+    <section class="py-12 px-4 bg-green-50">
+        <div class="max-w-4xl mx-auto text-center">
+            <img class="mx-auto" src="./images/quotation.png" alt="Quotation Image">
+            <p class="text-gray-600 text-sm leading-relaxed mt-4">
+                The staff has an extensive background in writing memorial and remembrance content from our
+                subject matter experts and marketing professionals who use a body trust and expertise. That
+                awareness goes beyond the logistics to the memorial process and service. These are experts
+                well-trained throughout the country to guide and educationally working.
+            </p>
+            <p class="mt-4 text-teal-600">-NICK R.</p>
+        </div>
+    </section>
+
+
+
+    <section class="py-16 text-center">
+
+        <img class="h-32 mx-auto" src="./images/series_of_events.png" alt="">
+        <h2 class="pt-8">When can you hold a celebration of life?</h2>
+        <p class="pt-8">That's up to you.</p>
+        <p class="pt-8 w-3/5 mx-auto">Families tell us that they love that the timing for a celebration of life is
+            flexible and needn't depend on a loved one's burial or cremation. Though many celebrations take place right
+            before or right after these events, others take place days, weeks or even months afterward. Even families
+            who choose very traditional funeral services may opt to hold more celebratory gatherings afterward.</p>
+
+        <p class="pt-8 w-3/5 mx-auto">When deciding when to hold a celebration of life, a family might consider factors
+            like travel schedules, existing commitments, or significant cultural or community events that held meaning
+            for their loved one. Whatever the decision, the date and time of a celebration can be planned to suit your
+            family's needs, and we're available to plan a celebration shortly after a death or for any point in the
+            future.</p>
+    </section>
+
+
+     <section class="flex items-center justify-center bg-teal-100">
+        <article class="w-1/2 mx-8 ">
+            <h2 class="mb-6 font-light text-gray-800">A celebration of life brings people together to honor your loved one.</h2>
+            <p class="opacity-90 leading-relaxed text-gray-700">
+                With an emphasis on the good times, happy memories and joyous moments, a celebration of life brings friends and family together in an uplifting and supportive setting where conversation, laughter, hugs and tears are welcome.
+            </p>
+        </article>
+        <img class="w-1/2 h-64 object-cover" src="./images/glasses of vine.png" alt="Glass of vines.">
+    </section>
+
+
+
+    <!-- Find Celebration of Life Experts -->
+    <section class="relative py-16 px-8">
+        <img src="./images/chairs_background.jpg" alt="Funeral home interior with elegant seating arrangement"
+            class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-white bg-opacity-85"></div>
+        <div class="relative max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl md:text-3xl font-light text-gray-800 mb-6">Our flexible funeral homes are perfect celebration of life venues.
+            </h2>
+            <p class="text-lg text-gray-700 mb-8">
+               A celebration of life can be held just about anywhere. Families choose sports venues, beaches, places of worship, community centers, even their own backyards. Many are also pleased to find that Dignity Memorial funeral homes have flexible event spaces that are perfect for celebrations.
+            </p>
+
+            <p class="text-lg text-gray-700 mb-8">
+               Funeral homes are evolving to meet the needs of today’s families, and our updated venues are changing the way families think about funeral homes. Some locations include outdoor areas for celebrations or spaces easily reimagined to suit most any occasion. All of our locations are flexible and staffed with professionals who plan celebrations every day. They have the experience and resources needed to create memorials that leave indelible memories. When you plan with us, we help you define your vision and then handle every detail, from <u><a>flowers</a></u> and design to music,  speakers and <u><a>food and frinks</a></u>. We can even ensure you have printed programs, <u><a>keepsakes</a></u> and <u><a href="">thank-you cards</a></u>  that reflect the sentiment of the event.
+            </p>
+
+            <div class="bg-white p-8 rounded-lg shadow-lg max-w-lg mx-auto">
+                <form class="space-y-6">
+                    <div>Find a celebration of life expert near you.</div>
+                    <div>Dignity Memorial planning professionals have the knowledge and expertise to take care of everything you need for a loved one's service.</div>
+                    <div class="text-left">
+                        <label for="zip" class="block text-sm font-medium text-gray-600 mb-3 uppercase tracking-wide">Enter City, State or Postal Code</label>
+                        <div class="flex">
+                            <input type="text" id="zip" name="zip"
+                                class="flex-1 px-4 py-3 border border-gray-300 rounded-l-md focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                                placeholder="">
+                            <button type="submit"
+                                class="bg-teal-500 hover:bg-teal-600 text-white font-medium px-8 py-3 rounded-r-md transition duration-200">
+                                SEARCH
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="mt-8 pt-6 border-t border-gray-200">
+                    <p class="text-sm text-gray-600 flex items-center justify-center">
+                        <span class="text-gray-800 font-medium">100% SERVICE GUARANTEE</span>
+                        <svg class="w-4 h-4 ml-2 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <!-- Bottom Text Section -->
+    <section class="py-12 px-4 ">
+        <div class="max-w-4xl mx-auto text-center">
+            <img class="mx-auto" src="./images/quotation.png" alt="Quotation Image">
+            <p class="text-gray-600 text-sm leading-relaxed mt-4">
+               Mom's friends and family were amazed with how beautiful we honored Mom's life. Special accommodations were made using their entire facility to make our guest feel welcome & comfortable i.e., sit down dinner, social seating for family reunions and for the little children.
+            </p>
+            <p class="mt-4 text-teal-600">-SUSAN W.</p>
+        </div>
+    </section>
+
+
+
+     <!-- Footer -->
+    <footer class="bg-stone-200 py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <!-- Logo Section -->
+            <div class="text-center mb-8">
+                <div class="flex items-center justify-center mb-4">
+                    <span class="text-2xl text-gray-700 italic mr-4">Every Detail Remembered</span>
+                    <div class="w-px h-8 bg-gray-400 mx-4"></div>
+                    <span class="text-2xl text-gray-700 font-bold">Dignity</span>
+                    <span class="text-2xl text-gray-700">™</span>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div
+                class="flex flex-wrap justify-center gap-8 text-sm text-gray-600 uppercase tracking-wider font-sans mb-8">
+                <a href="#" class="hover:text-gray-800">ABOUT US</a>
+                <a href="#" class="hover:text-gray-800">CONTACT US</a>
+                <a href="#" class="hover:text-gray-800">CAREERS</a>
+                <a href="#" class="hover:text-gray-800">PRIVACY POLICY</a>
+                <a href="#" class="hover:text-gray-800">TERMS OF SERVICE</a>
+                <a href="#" class="hover:text-gray-800">ACCESSIBILITY</a>
+                <a href="#" class="hover:text-gray-800">DO NOT CALL</a>
+                <a href="#" class="hover:text-gray-800">
+                    <svg class="w-4 h-4 inline" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 9 5.16-.74 9-4.45 9-9V7l-10-5z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Copyright Footer -->
+    <footer class="bg-zinc-600 py-6">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-gray-300 text-sm mb-4">© 2025 SCI SHARED RESOURCES, LLC. ALL RIGHTS RESERVED</p>
+            <p class="text-gray-400 text-xs mb-2">
+                <a href="#" class="hover:text-gray-300">Do Not Sell or Share My Personal Information</a>
+            </p>
+            <p class="text-gray-400 text-xs leading-relaxed max-w-4xl mx-auto">
+                This site is provided as a service of SCI Shared Resources, LLC. The Dignity Memorial brand name is used
+                to identify a network of licensed funeral, cremation and cemetery providers that include affiliates of
+                Service Corporation International, 1929 Allen Parkway, Houston, Texas. With over 2,000 locations,
+                Dignity Memorial providers proudly serve over 375,000 families a year.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
