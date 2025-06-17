@@ -12,6 +12,166 @@
 
 
     <!-- Header Section Here -->
+     <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-serif text-gray-800">Dignity<sup class="text-sm">®</sup></h1>
+                    <span class="text-sm text-gray-600 ml-2">MEMORIAL</span>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <div class="relative group">
+                        <button id="planDropdownBtn"
+                            class="flex items-center space-x-1 text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors">
+                            <span class="text-sm font-medium tracking-wide">PLAN A FUNERAL OR CREMATION</span>
+                            <svg class="w-4 h-4 transition-transform duration-200" id="planDropdownArrow" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <!-- Dropdown Menu -->
+                        <div id="planDropdown"
+                            class="absolute top-full left-0 w-96 bg-white shadow-lg border border-gray-200 opacity-0 invisible transform translate-y-2 transition-all duration-200 z-50">
+                            <div class="p-8">
+                                <div class="grid grid-cols-2 gap-8">
+                                    <!-- Immediate Need Column -->
+                                    <div>
+                                        <h3 class="text-xl font-serif text-gray-800 mb-4">Immediate Need</h3>
+                                        <a href="#"
+                                            class="block text-teal-600 hover:text-teal-700 text-sm font-medium border-b border-teal-600 pb-1 mb-4 transition-colors">
+                                            Death has occurred or is near
+                                        </a>
+                                    </div>
+
+                                    <!-- Plan Ahead Column -->
+                                    <div>
+                                        <h3 class="text-xl font-serif text-gray-800 mb-4">Plan Ahead</h3>
+                                        <a href="#"
+                                            class="block text-teal-600 hover:text-teal-700 text-sm font-medium border-b border-teal-600 pb-1 mb-4 transition-colors">
+                                            Pre-plan a funeral or cremation
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#"
+                        class="text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors text-sm font-medium tracking-wide">
+                        FIND OBITUARIES AND SERVICES
+                    </a>
+
+                    <a href="#"
+                        class="text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors text-sm font-medium tracking-wide">
+                        FIND FUNERAL HOMES OR CEMETERIES
+                    </a>
+
+                    <div class="relative group">
+                        <button id="resourcesDropdownBtn"
+                            class="flex items-center space-x-1 text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors">
+                            <span class="text-sm font-medium tracking-wide">IDEAS AND RESOURCES</span>
+                            <svg class="w-4 h-4 transition-transform duration-200" id="resourcesDropdownArrow"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <!-- Resources Dropdown Menu -->
+                        <div id="resourcesDropdown"
+                            class="absolute top-full right-0 w-screen max-w-5xl bg-white shadow-lg border border-gray-200 opacity-0 invisible transform translate-y-2 transition-all duration-200 z-50">
+                            <div class="p-8">
+                                <div class="flex gap-8">
+                                    <!-- Left Column - Featured Content -->
+                                    <div class="w-1/3">
+                                        <div class="mb-6">
+                                            <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=300&h=200&fit=crop"
+                                                alt="Elderly couple on bench"
+                                                class="w-full h-32 object-cover rounded-lg mb-4">
+                                            <p class="text-xs text-gray-500 uppercase tracking-wide mb-2">FREE PRICING
+                                                GUIDE:</p>
+                                            <h3 class="text-lg font-serif text-gray-800 mb-3">Why pre-plan a funeral or
+                                                cremation?</h3>
+                                            <a href="#"
+                                                class="text-teal-600 hover:text-teal-700 text-sm font-medium">Learn
+                                                More</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Middle Column -->
+                                    <div class="w-1/3">
+                                        <div class="space-y-4">
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Prepaid
+                                                Funeral Plans</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Funeral
+                                                & Cremation Costs</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Cemetery
+                                                & Cremation Property</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Cremation</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Celebration
+                                                of Life</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Right Column -->
+                                    <div class="w-1/3">
+                                        <div class="space-y-4">
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Veterans
+                                                Burials & Funerals</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">When
+                                                Death Has Occurred</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Grief
+                                                & Sympathy</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Memorial
+                                                Services</a>
+                                        </div>
+
+                                        <div class="mt-8 pt-6 border-t border-gray-200">
+                                            <a href="#"
+                                                class="flex items-center text-teal-600 hover:text-teal-700 text-sm font-medium uppercase tracking-wide">
+                                                VIEW ALL RESOURCES
+                                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor"
+                                                    viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <button class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
 
 
 
@@ -152,14 +312,16 @@
 
         <div class="py-16">
             <h1>Be inspired to plan your perfect service</h1>
-            <p class="py-4 w-3/5">A funeral or cremation memorial that celebrates the details that make you unique in the world takes a little thought and planning. Fill out the form to get your free copy of Imagine: A Memorial Inspiration Guide and start thinking about how you'd like to be remembered.</p>
+            <p class="py-4 w-3/5">A funeral or cremation memorial that celebrates the details that make you unique in
+                the world takes a little thought and planning. Fill out the form to get your free copy of Imagine: A
+                Memorial Inspiration Guide and start thinking about how you'd like to be remembered.</p>
 
             <h1 class="mb-2">FIRST NAME</h1>
             <input type="text" class="border border-gray-300 rounded-md px-4 py-2 w-3/5 mb-4">
 
             <h1 class="mb-2">EMAIL</h1>
-             <input type="text" class="border border-gray-300 rounded-md px-4 py-2 w-3/5 mb-4">
-            
+            <input type="text" class="border border-gray-300 rounded-md px-4 py-2 w-3/5 mb-4">
+
             <button class="block mt-2 border rounded-sm border-teal-500 p-2">DOWNLOAD GUIDE</button>
 
         </div>
@@ -172,7 +334,9 @@
     <section class="text-center py-16 px-16">
 
         <h1>Financial protection for your family</h1>
-        <p class="py-8 w-3/5 mx-auto">When you plan ahead, you get to carefully consider your options and make choices that ensure that your life is remembered and celebrated the way that you want—but you also lock in today's prices and protect your family from worrying about money.</p>
+        <p class="py-8 w-3/5 mx-auto">When you plan ahead, you get to carefully consider your options and make choices
+            that ensure that your life is remembered and celebrated the way that you want—but you also lock in today's
+            prices and protect your family from worrying about money.</p>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <!-- Card 1 -->
@@ -238,7 +402,305 @@
 
 
 
+
+    <section class="mx-auto px-16 py-16 text-center bg-teal-100">
+        <h1>Breaking down costs and options</h1>
+        <p class="w-3/5 mx-auto py-8">When it comes to planning and funding a funeral in advance, there are options—and some are better than others. Considering all the choices can get confusing, but a professional planner will take the time to get to know you and carefully explain what you need to understand.</p>
+
+        <div class="flex flex-row gap-6 justify-center py-16">
+            <!-- Card 2 -->
+            <a href="#cherished-memories" class="block group cursor-pointer">
+                <div
+                    class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group-hover:transform group-hover:scale-105">
+                    <div class="relative overflow-hidden">
+                        <img src="./images/prepaid_cremation_options.jpg" alt="Cherished memories"
+                            class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300">
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-lg font-light text-gray-700 italic">PRE-PLANNING</h3>
+                        <h4 class="text-lg font-light text-gray-700 pt-2">Prepaid cremation options</h2>
+                            <p class="text-gray-700 font-light pt-2 text-sm">LEARN MORE</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="#personalized-message" class="block group cursor-pointer">
+                <div
+                    class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group-hover:transform group-hover:scale-105">
+                    <div class="relative overflow-hidden">
+                        <img src="./images/funeral_trusts.jpg" alt="A personalized message"
+                            class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300">
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-lg font-light text-gray-700 italic">PRE-PLANNING</h3>
+                        <h4 class="text-lg font-light text-gray-700 pt-2">Funeral trusts & insurance</h2>
+                            <p class="text-gray-700 font-light pt-2 text-sm">LEARN MORE</p>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+
+        <!-- Three Images -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <a href="#meaningful-music" class="block group cursor-pointer">
+                <div
+                    class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group-hover:transform group-hover:scale-105">
+                    <div class="relative overflow-hidden">
+                        <img src="./images/types_of_final.jpg" alt="Meaningful music"
+                            class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300">
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h4 class=" font-light text-gray-700 italic">PRE-PLANNING</h3>
+                            <h4 class="text-lg font-light text-gray-700 pt-2">Types of final expense insurance</h2>
+                                <p class="text-gray-700 font-light pt-2 text-sm">LEARN MORE</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 2 -->
+            <a href="#cherished-memories" class="block group cursor-pointer">
+                <div
+                    class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group-hover:transform group-hover:scale-105">
+                    <div class="relative overflow-hidden">
+                        <img src="./images/types_of_burial.jpg" alt="Cherished memories"
+                            class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300">
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-lg font-light text-gray-700 italic">PRE-PLANNING</h3>
+                        <h4 class="text-lg font-light text-gray-700 pt-2">Types of burial insurance</h2>
+                            <p class="text-gray-700 font-light pt-2 text-sm">LEARN MORE</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="#personalized-message" class="block group cursor-pointer">
+                <div
+                    class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group-hover:transform group-hover:scale-105">
+                    <div class="relative overflow-hidden">
+                        <img src="./images/benefits_of_prepaid.jpg" alt="A personalized message"
+                            class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300">
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-lg font-light text-gray-700 italic">PRE-PLANNING</h3>
+                        <h4 class="text-lg font-light text-gray-700 pt-2">Benefits of prepaid burial</h2>
+                            <p class="text-gray-700 font-light pt-2 text-sm">LEARN MORE</p>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Section planning ahead is a loving gesture -->
+     <section class="text-center py-16 px-16 bg-gray-50">
+
+        <h1>Planning ahead is a loving gesture</h1>
+        <p class="py-8 w-3/5 mx-auto">As a parent or partner, you will give your loved ones many gifts. A lifetime of presents may include everything from a birthday puppy to a college education, a dream vacation to a listening ear. But the next time you want to give them something special, consider planning your funeral ahead of time.</p>
+
+
+
+         <!-- Three Images -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <a href="#meaningful-music" class="block group cursor-pointer">
+                <div
+                    class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group-hover:transform group-hover:scale-105">
+                    <div class="relative overflow-hidden">
+                        <img src="./images/nine_gifts.jpg" alt="Meaningful music"
+                            class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300">
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h4 class=" font-light text-gray-700 italic">PRE-PLANNING</h3>
+                            <h4 class="text-lg font-light text-gray-700 pt-2">Nine gifts to leave your family</h2>
+                                <p class="text-gray-700 font-light pt-2 text-sm">LEARN MORE</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 2 -->
+            <a href="#cherished-memories" class="block group cursor-pointer">
+                <div
+                    class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group-hover:transform group-hover:scale-105">
+                    <div class="relative overflow-hidden">
+                        <img src="./images/the_greatest_gift.jpg" alt="Cherished memories"
+                            class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300">
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-lg font-light text-gray-700 italic">PRE-PLANNING</h3>
+                        <h4 class="text-lg font-light text-gray-700 pt-2">The greatest gift you can give</h2>
+                            <p class="text-gray-700 font-light pt-2 text-sm">LEARN MORE</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="#personalized-message" class="block group cursor-pointer">
+                <div
+                    class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group-hover:transform group-hover:scale-105">
+                    <div class="relative overflow-hidden">
+                        <img src="./images/surprising_benefits.jpg" alt="A personalized message"
+                            class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300">
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-lg font-light text-gray-700 italic">PRE-PLANNING</h3>
+                        <h4 class="text-lg font-light text-gray-700 pt-2">Surprising benefists of prepaid funerals</h2>
+                            <p class="text-gray-700 font-light pt-2 text-sm">LEARN MORE</p>
+                    </div>
+                </div>
+            </a>
+
+     </section>
+
+
+
+
+     <!-- Section Cemetery Memorialization -->
+    <section class="bg-teal-100 text-center">
+
+        <h1 class="pt-6">Plan a celebration of your unique life</h1>
+        <p class="w-3/5 mx-auto py-6">Each person is one of a kind. We all like different things and have different life experiences—and funerals can be as individual as the lives they honor. When you plan ahead, you get to decide right down to the smallest detail how you'd like your service, whether a traditional funeral, a contemporary celebration of life or a cremation memorial. We consider every little thing to create a fitting tribute that reflects your values, character and traditions, no matter what they may be.</p>
+
+
+
+        <div class="flex gap-6 mx-auto justify-center py-16">
+            <!-- Card 2 -->
+            <a href="#cherished-memories" class="block group cursor-pointer">
+                <div
+                    class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group-hover:transform group-hover:scale-105">
+                    <div class="relative overflow-hidden">
+                        <img src="./images/trends_in_funerals.jpg" alt="Cherished memories"
+                            class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300">
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-lg font-light text-gray-700 italic">MEMORIAL SERVICES</h3>
+                        <h4 class="text-lg font-light text-gray-700 pt-2">Trends in funerals & cremations</h2>
+                            <p class="text-gray-700 font-light pt-2 text-sm">LEARN MORE</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="#personalized-message" class="block group cursor-pointer">
+                <div
+                    class="bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group-hover:transform group-hover:scale-105">
+                    <div class="relative overflow-hidden">
+                        <img src="./images/ideas_for_creating.jpg" alt="A personalized message"
+                            class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300">
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-lg font-light text-gray-700 italic">CELEBRATION OF LIFE</h3>
+                        <h4 class="text-lg font-light text-gray-700 pt-2">Ideas for creating a personalized funeral</h2>
+                            <p class="text-gray-700 font-light pt-2 text-sm">LEARN MORE</p>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="flex flex-col pb-8">
+            <a href=""><u>How to choose a casket</u></a>
+            <a href=""><u>Funeral flower options</u></a>
+            <a href=""><u>Choosing favors and keepsakes</u></a>
+        </div>
+
+    </section>
+
+
+
+    <!-- DOWNLOAD GUIDE yet to be implemented -->
+
+
+
+
     
+     <!-- Footer -->
+    <footer class="bg-gray-100 py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <!-- Logo Section -->
+            <div class="text-center mb-8">
+                <div class="flex items-center justify-center mb-4">
+                    <span class="text-2xl text-gray-700 italic mr-4">Every Detail Remembered</span>
+                    <div class="w-px h-8 bg-gray-400 mx-4"></div>
+                    <span class="text-2xl text-gray-700 font-bold">Dignity</span>
+                    <span class="text-2xl text-gray-700">™</span>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div
+                class="flex flex-wrap justify-center gap-8 text-sm text-gray-600 uppercase tracking-wider font-sans mb-8">
+                <a href="#" class="hover:text-gray-800">ABOUT US</a>
+                <a href="#" class="hover:text-gray-800">CONTACT US</a>
+                <a href="#" class="hover:text-gray-800">CAREERS</a>
+                <a href="#" class="hover:text-gray-800">PRIVACY POLICY</a>
+                <a href="#" class="hover:text-gray-800">TERMS OF SERVICE</a>
+                <a href="#" class="hover:text-gray-800">ACCESSIBILITY</a>
+                <a href="#" class="hover:text-gray-800">DO NOT CALL</a>
+                <a href="#" class="hover:text-gray-800">
+                    <svg class="w-4 h-4 inline" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 9 5.16-.74 9-4.45 9-9V7l-10-5z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Copyright Footer -->
+    <footer class="bg-gray-700 py-6">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-gray-300 text-sm mb-4">© 2025 SCI SHARED RESOURCES, LLC. ALL RIGHTS RESERVED</p>
+            <p class="text-gray-400 text-xs mb-2">
+                <a href="#" class="hover:text-gray-300">Do Not Sell or Share My Personal Information</a>
+            </p>
+            <p class="text-gray-400 text-xs leading-relaxed max-w-4xl mx-auto">
+                This site is provided as a service of SCI Shared Resources, LLC. The Dignity Memorial brand name is used
+                to identify a network of licensed funeral, cremation and cemetery providers that include affiliates of
+                Service Corporation International, 1929 Allen Parkway, Houston, Texas. With over 2,000 locations,
+                Dignity Memorial providers proudly serve over 375,000 families a year.
+            </p>
+        </div>
+    </footer>
+
+
 
 </body>
 
