@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dignity Memorial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+     <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-serif text-gray-800">Dignity<sup class="text-sm">®</sup></h1>
+                    <span class="text-sm text-gray-600 ml-2">MEMORIAL</span>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <div class="relative group">
+                        <button id="planDropdownBtn"
+                            class="flex items-center space-x-1 text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors">
+                            <span class="text-sm font-medium tracking-wide">PLAN A FUNERAL OR CREMATION</span>
+                            <svg class="w-4 h-4 transition-transform duration-200" id="planDropdownArrow" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <!-- Dropdown Menu -->
+                        <div id="planDropdown"
+                            class="absolute top-full left-0 w-96 bg-white shadow-lg border border-gray-200 opacity-0 invisible transform translate-y-2 transition-all duration-200 z-50">
+                            <div class="p-8">
+                                <div class="grid grid-cols-2 gap-8">
+                                    <!-- Immediate Need Column -->
+                                    <div>
+                                        <h3 class="text-xl font-serif text-gray-800 mb-4">Immediate Need</h3>
+                                        <a href="#"
+                                            class="block text-teal-600 hover:text-teal-700 text-sm font-medium border-b border-teal-600 pb-1 mb-4 transition-colors">
+                                            Death has occurred or is near
+                                        </a>
+                                    </div>
+
+                                    <!-- Plan Ahead Column -->
+                                    <div>
+                                        <h3 class="text-xl font-serif text-gray-800 mb-4">Plan Ahead</h3>
+                                        <a href="#"
+                                            class="block text-teal-600 hover:text-teal-700 text-sm font-medium border-b border-teal-600 pb-1 mb-4 transition-colors">
+                                            Pre-plan a funeral or cremation
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#"
+                        class="text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors text-sm font-medium tracking-wide">
+                        FIND OBITUARIES AND SERVICES
+                    </a>
+
+                    <a href="#"
+                        class="text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors text-sm font-medium tracking-wide">
+                        FIND FUNERAL HOMES OR CEMETERIES
+                    </a>
+
+                    <div class="relative group">
+                        <button id="resourcesDropdownBtn"
+                            class="flex items-center space-x-1 text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors">
+                            <span class="text-sm font-medium tracking-wide">IDEAS AND RESOURCES</span>
+                            <svg class="w-4 h-4 transition-transform duration-200" id="resourcesDropdownArrow"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <!-- Resources Dropdown Menu -->
+                        <div id="resourcesDropdown"
+                            class="absolute top-full right-0 w-screen max-w-5xl bg-white shadow-lg border border-gray-200 opacity-0 invisible transform translate-y-2 transition-all duration-200 z-50">
+                            <div class="p-8">
+                                <div class="flex gap-8">
+                                    <!-- Left Column - Featured Content -->
+                                    <div class="w-1/3">
+                                        <div class="mb-6">
+                                            <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=300&h=200&fit=crop"
+                                                alt="Elderly couple on bench"
+                                                class="w-full h-32 object-cover rounded-lg mb-4">
+                                            <p class="text-xs text-gray-500 uppercase tracking-wide mb-2">FREE PRICING
+                                                GUIDE:</p>
+                                            <h3 class="text-lg font-serif text-gray-800 mb-3">Why pre-plan a funeral or
+                                                cremation?</h3>
+                                            <a href="#"
+                                                class="text-teal-600 hover:text-teal-700 text-sm font-medium">Learn
+                                                More</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Middle Column -->
+                                    <div class="w-1/3">
+                                        <div class="space-y-4">
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Prepaid
+                                                Funeral Plans</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Funeral
+                                                & Cremation Costs</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Cemetery
+                                                & Cremation Property</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Cremation</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Celebration
+                                                of Life</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Right Column -->
+                                    <div class="w-1/3">
+                                        <div class="space-y-4">
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Veterans
+                                                Burials & Funerals</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">When
+                                                Death Has Occurred</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Grief
+                                                & Sympathy</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Memorial
+                                                Services</a>
+                                        </div>
+
+                                        <div class="mt-8 pt-6 border-t border-gray-200">
+                                            <a href="#"
+                                                class="flex items-center text-teal-600 hover:text-teal-700 text-sm font-medium uppercase tracking-wide">
+                                                VIEW ALL RESOURCES
+                                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor"
+                                                    viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <button class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+
+     <!-- Breadcrumb Navigation -->
+    <nav class="bg-gray-50 border-b border-gray-200 py-3 px-8">
+        <div class="max-w-6xl mx-auto">
+            <ul class="flex items-center space-x-2 text-sm text-gray-600">
+                <li>
+                    <a href="#" class="hover:text-teal-600 transition duration-200">
+                        <span>HOME</span>
+                    </a>
+                </li>
+                <li class="flex items-center">
+                    <svg class="w-4 h-4 mx-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    <a href="#" class="hover:text-teal-600 transition duration-200">
+                        <span>CREMATION</span>
+                    </a>
+                </li>
+                <li class="flex items-center">
+                    <svg class="w-4 h-4 mx-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    <span class="text-gray-800 font-medium">COST OF CREMATION</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="relative h-[500px] bg-cover  bg-no-repeat"
+        style="background-image: url('./images/average_cremation_cost.jpg');">
+        <!-- Overlay (optional, for darkening the image) -->
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+        <!-- Centered Text -->
+        <div
+            class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 w-3/5 mx-auto">
+            <h1 class="text-4xl font-bold mb-4">How Much Does the Average Cremation Cost in 2024?</h1>
+        </div>
+
+    </section>
+
+    <div class="leading-7 text-xl w-3/5 mx-auto mt-8 px-4 py-8 bg-zinc-200">
+        <p class="px-8">Both Americans and Canadians are choosing cremation more and more. They do so for various
+            reasons. Among them is cost. In 2024, the median cost for a cremation with a viewing and a funeral or
+            memorial in the United States, including the cremation casket and urn, is around $6,280, according to the
+            National Funeral Directors Association. Many factors affect cost.</p>
+    </div>
+
+
+    <section class="w-full mx-auto bg-gradient-to-r from-blue-50 to-teal-50 rounded-lg shadow-lg overflow-hidden my-8">
+        <div class="flex flex-col lg:flex-row items-center lg:items-stretch min-h-[400px]">
+            <!-- Left side - Image -->
+            <div class="w-full lg:w-5/12 p-6 lg:p-8 flex items-center justify-center">
+                <div class="w-full max-w-xs lg:max-w-sm">
+                    <img src="./images/from.png" alt="Pricing Guide" class="w-full h-auto shadow-lg rounded-lg">
+                </div>
+            </div>
+
+            <!-- Right side - Content -->
+            <div class="w-full lg:w-7/12 p-6 lg:p-8 lg:pl-4 flex items-center">
+                <div class="w-full max-w-lg">
+                    <h2 class="text-2xl lg:text-3xl font-light text-gray-800 mb-4 text-center lg:text-left">
+                        Get your free <em class="text-teal-600 font-medium italic">pricing guide</em>
+                    </h2>
+
+                    <p class="text-gray-600 text-base lg:text-lg mb-6 leading-relaxed text-center lg:text-left">
+                        Our <strong>Guide to Understanding Funeral & Cremation Costs</strong> helps you decode the
+                        sometimes confusing costs of final arrangements.
+                    </p>
+
+                    <div class="text-center lg:text-left">
+                        <button
+                            class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-6 rounded transition-colors duration-300 text-sm tracking-wide">
+                            DOWNLOAD NOW
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="w-1/2 mx-auto px-4 py-8 my-8">
+        <p class="pl-8">In this article you will learn:</p>
+        <ul class="py-8 list-disc pl-8">
+            <li><a href=""><u>What determines cremation costs</u></a></li>
+            <li><a href=""><u>How the cost for cremation services breaks down</u></a></li>
+            <li><a href=""><u>If you need a casket for cremation</u></a></li>
+            <li><a href=""><u>What the cheapest cremation option is</u></a></li>
+            <li><a href=""><u>What the newest cremation option is</u></a></li>
+            <li><a href=""><u>Why people choose cremation</u></a></li>
+        </ul>
+
+        <p>Though cremation is relatively straightforward, <b>a number of factors contribute to the cost</b>. You can
+            elect to hold a viewing before the cremation, which will usually involve embalming and a casket. Or you can
+            skip the viewing but host a <a href=""><u>celebration of life</u></a> after cremation. Some families choose
+            to do both.</p>
+
+        <p class="py-8">
+            Ashes may be memorialized at a cemetery or scattered in a place that was personally meaningful to the loved
+            one. Many people opt to keep their loved one's ashes at home. Each choice impacts the overall cost. <a
+                href=""><u>Prepaid cremation</u></a> can help <b>guard against future price increases</b>.
+        </p>
+    </section>
+
+
+    <section class="w-1/2 mx-auto px-4 py-8 my-8">
+        <h1 class="text-4xl">Understanding cremation costs</h1>
+        <p class="pt-4"><b>Many factors determine the price</b> of a cremation, including:</p>
+
+        <ul class="py-8 list-disc pl-8">
+            <li>Attention to detail, such as chain of custody and level of personal care that goes into the cremation
+            </li>
+            <li>Whether the crematory is owned by the cremation provider</li>
+            <li>Location of the cremation provider</li>
+            <li>Distance traveled to pick up and transport your loved one</li>
+            <li>Local regulatory requirements</li>
+            <li>Planning time for a visitation or memorial service</li>
+            <li>Facilities for a visitation or memorial service</li>
+            <li>Containers used for the visitation and service (if desired)</li>
+        </ul>
+
+        <p>When you're shopping for a cremation provider, use <u><a href="">this list of questions</a></u> to <b>get a
+                good idea of how a cremation provider operates</b>. Keep it handy and take notes as you make calls.</p>
+
+
+        <h1 class="text-4xl pt-16">Cost breakdown for cremation services</h1>
+        <p class="pt-4">In 2023, according to the National Funeral Directors Association, the national median cost
+            breakdown for <b>a cremation with a viewing before and memorial service or celebration of life afterward</b>
+            was as follows:</p>
+
+
+        <div class="mt-8 mx-auto bg-white border border-gray-300 rounded-lg overflow-hidden shadow-sm">
+            <div class="divide-y divide-gray-300">
+                <!-- Row 1 -->
+                <div class="flex">
+                    <div class="flex-1 p-4 bg-white border-r border-gray-300">
+                        <span class="text-gray-800 text-sm">Basic services of the funeral director and staff</span>
+                    </div>
+                    <div class="w-24 p-4 bg-gray-100 text-center">
+                        <span class="text-gray-800 text-sm font-medium">$2,495</span>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="flex">
+                    <div class="flex-1 p-4 bg-gray-100 border-r border-gray-300">
+                        <span class="text-gray-800 text-sm">Removal/transfer of loved one to funeral home</span>
+                    </div>
+                    <div class="w-24 p-4 bg-gray-200 text-center">
+                        <span class="text-gray-800 text-sm font-medium">$395</span>
+                    </div>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="flex">
+                    <div class="flex-1 p-4 bg-white border-r border-gray-300">
+                        <span class="text-gray-800 text-sm">Embalming</span>
+                    </div>
+                    <div class="w-24 p-4 bg-gray-100 text-center">
+                        <span class="text-gray-800 text-sm font-medium">$845</span>
+                    </div>
+                </div>
+
+                <!-- Row 4 -->
+                <div class="flex">
+                    <div class="flex-1 p-4 bg-gray-100 border-r border-gray-300">
+                        <span class="text-gray-800 text-sm">Preparation of the loved one</span>
+                    </div>
+                    <div class="w-24 p-4 bg-gray-200 text-center">
+                        <span class="text-gray-800 text-sm font-medium">$295</span>
+                    </div>
+                </div>
+
+                <!-- Row 5 -->
+                <div class="flex">
+                    <div class="flex-1 p-4 bg-white border-r border-gray-300">
+                        <span class="text-gray-800 text-sm">Use of facilities/staff for viewing</span>
+                    </div>
+                    <div class="w-24 p-4 bg-gray-100 text-center">
+                        <span class="text-gray-800 text-sm font-medium">$475</span>
+                    </div>
+                </div>
+
+                <!-- Row 6 -->
+                <div class="flex">
+                    <div class="flex-1 p-4 bg-gray-100 border-r border-gray-300">
+                        <span class="text-gray-800 text-sm">Use of facilities/staff for service</span>
+                    </div>
+                    <div class="w-24 p-4 bg-gray-200 text-center">
+                        <span class="text-gray-800 text-sm font-medium">$550</span>
+                    </div>
+                </div>
+
+                <!-- Row 7 -->
+                <div class="flex">
+                    <div class="flex-1 p-4 bg-white border-r border-gray-300">
+                        <span class="text-gray-800 text-sm">Service car/van</span>
+                    </div>
+                    <div class="w-24 p-4 bg-gray-100 text-center">
+                        <span class="text-gray-800 text-sm font-medium">$175</span>
+                    </div>
+                </div>
+
+                <!-- Row 8 -->
+                <div class="flex">
+                    <div class="flex-1 p-4 bg-gray-100 border-r border-gray-300">
+                        <span class="text-gray-800 text-sm">Printed materials (basic memorial package)</span>
+                    </div>
+                    <div class="w-24 p-4 bg-gray-200 text-center">
+                        <span class="text-gray-800 text-sm font-medium">$195</span>
+                    </div>
+                </div>
+
+                <!-- Row 9 -->
+                <div class="flex">
+                    <div class="flex-1 p-4 bg-white border-r border-gray-300">
+                        <span class="text-gray-800 text-sm">Cremation fee (if the funeral home uses a third
+                            party)</span>
+                    </div>
+                    <div class="w-24 p-4 bg-gray-100 text-center">
+                        <span class="text-gray-800 text-sm font-medium">$400</span>
+                    </div>
+                </div>
+
+                <!-- Row 10 -->
+                <div class="flex">
+                    <div class="flex-1 p-4 bg-gray-100 border-r border-gray-300">
+                        <span class="text-gray-800 text-sm">Cremation container</span>
+                    </div>
+                    <div class="w-24 p-4 bg-gray-200 text-center">
+                        <span class="text-gray-800 text-sm font-medium">$160</span>
+                    </div>
+                </div>
+
+                <!-- Row 11 -->
+                <div class="flex">
+                    <div class="flex-1 p-4 bg-white border-r border-gray-300">
+                        <span class="text-gray-800 text-sm">Urn</span>
+                    </div>
+                    <div class="w-24 p-4 bg-gray-100 text-center">
+                        <span class="text-gray-800 text-sm font-medium">$295</span>
+                    </div>
+                </div>
+
+                <!-- Total Row -->
+                <div class="flex border-t-2 border-gray-400">
+                    <div class="flex-1 p-4 bg-gray-200 border-r border-gray-300">
+                        <span class="text-gray-800 text-sm font-semibold">Total</span>
+                    </div>
+                    <div class="w-24 p-4 bg-gray-300 text-center">
+                        <span class="text-gray-800 text-sm font-semibold">$6,280*</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="pt-4">*Costs will vary by region and provider.</p>
+
+
+        <h1 class="pt-8 md:text-4xl sm:text-xl">Do you need a casket for cremation?</h1>
+        <p class="pt-4"><a href=""><u>The casket</u></a> is often one of the more expensive aspects of a funeral with a
+            burial. Caskets can range from about $2,000 to up to $20,000 or much more.**</p>
+
+        <p class="pt-4">Though <b>a casket is not required for cremation</b>, many state laws require an “alternative
+            container.”</p>
+
+        <p class="pt-4">Also known as cremation containers or cremation caskets, alternative containers are simpler than
+            traditional burial caskets. They are usually made of cardboard, wood or fiberboard, without any metal parts.
+            Their purpose is to <b>securely hold a loved one before and during <u>the cremation process</u> </b>,
+            including on the way from the funeral home to the crematorium.</p>
+
+        <p class="pt-4">State laws require cremation containers to protect the deceased and those responsible for
+            transporting them from funeral homes to crematories. Having a loved one in a container makes it easier to
+            move the loved one from place to place, including into the cremation chamber.</p>
+
+        <p class="pt-4">The <u>Federal Trade Commission's Funeral Rule</u> requires any funeral home that provides
+            cremations to offer families at least one alternative container. Most crematories also require some kind of
+            container for a loved one being cremated.</p>
+
+        <p class="pt-4">What if someone chooses to have <b>a viewing or funeral before a cremation?</b></p>
+
+        <p class="pt-4">A casket may be needed for a loved one who will be cremated after a service. Some religions or
+            cultures ask that a loved one's body be present at the service. For example, the <u>Catholic Church</u>
+            prefers the deceased to be present in a casket for the funeral liturgy. The presence of the loved one at the
+            service may also offer a family a sense of comfort, particularly if it's the family's first experience with
+            someone choosing cremation. Being present at the service may also have been the personal preference of the
+            loved one being honored.</p>
+
+        <p class="pt-4">Additionally, guests who attend a viewing or funeral may expect to see a casket rather than a
+            simple container. Even when not required, some <b>families may choose to buy or rent a casket for a
+                cremation service.</b></p>
+
+        <p class="pt-4">Rental caskets, also known as ceremonial caskets, combine the look of a traditional casket with
+            the functionality of a simple cremation container. A <b>wooden or metal casket exterior houses a cardboard
+                alternative container</b> , which can be removed after the service. This choice <b>makes a nice
+                presentation and keeps costs down</b>. A rental casket can be as little as half the price of even an
+            inexpensive casket.</p>
+
+        <img class="pt-4" src="./images/casket_of_cremation.jpg" alt="Casket of Cremation">
+
+
+        <h2 class="pt-8 md:text-4xl sm:text-xl">A container for cremation</h2>
+
+        <p class="pt-4"><b>Alternative containers can be simple cardboard or plywood/laminate boxes</b>, though many
+            families choose to honor their loved ones with a solid wood cremation casket.</p>
+
+        <p class="pt-4">The simplest cardboard options cost about $175, while solid wood cremation caskets may cost up
+            to $500.** Containers come in various colors, finishes and materials, from cardboard to wicker to wood.</p>
+
+        <p class="pt-4"><b>While budget is one factor, the choice often reflects other considerations</b>. One family
+            might choose a solid wood casket with a crepe lining and pillow to provide a sense of comfort when viewing
+            their loved one before cremation. Another family may choose an elegant wicker basket to give their loved one
+            an earthier farewell. Or a family might select a simple plywood container and then personalize it with art
+            and messages.</p>
+
+
+        <h2 class="pt-8 md:text-4xl sm:text-xl">A container for ashes</h2>
+
+        <p class="pt-4">The types of <b>containers for ashes are as varied as the options for what to do with ashes</b>,
+            and they range in cost from free to thousands of dollars.**</p>
+
+        <p class="pt-4">Your plans for your loved one's ashes dictate this choice. To give Grandmother a <u>permanent
+                resting place</u> in a mausoleum niche, you may want to purchase a pretty urn. To host a scattering
+            service for Dad at his favorite fishing hole, you may want to receive his ashes in a scattering urn or a
+            simple container. Containers for ashes range from biodegradable tubes to hand-carved wooden boxes to
+            decorative ceramic, porcelain or metal urns.</p>
+
+        <img class="pt-4" src="./images/container_of_ashes.jpg" alt="Container of Ashes">
+
+        <p class="pt-4">Here are some of the <b>most common types of containers for ashes.</b></p>
+
+        <h3 class="pt-8 md:text-2xl sm:text-xl">Basic containers</h3>
+        <p class="pt-4">Crematories provide funeral homes with ashes encased in rigid plastic or cardboard containers.
+            If a family doesn't purchase an urn, that temporary container may be included in the cost of cremation
+            services or provided at a nominal charge.**</p>
+
+        <p class="pt-4">Every family who entrusts us with their loved one's cremation can choose a basic container. It
+            comes in a care package that includes a handwritten note from a funeral director, an informational booklet
+            titled “Caring for Yourself and Your Loved One” and a Remembrance Day packet designed to help the family
+            honor their loved one on the one-year anniversary of their passing.</p>
+
+        <h3 class="pt-8 md:text-2xl sm:text-xl">Scattering urns</h3>
+
+        <p class="pt-4">A scattering urn is a temporary container specially designed to help scatter a loved one's ashes
+            during a <u>scattering ceremony</u>, often in a meaningful location such as a garden, ocean or forest. The
+            design usually incorporates a secure lid, so ashes don't spill during transport, and a spout to make them
+            easier to spread evenly and gently.</p>
+
+        <p class="pt-4">Scattering urns can be personalized to reflect the loved one's personality and preferences,
+            thereby providing a deeply personal touch to the act of saying a final goodbye. Depending on the material
+            and other features, these may cost between $50 and a few hundred dollars.**</p>
+
+        <h3 class="pt-8 md:text-2xl sm:text-xl">Full-size urns</h3>
+        <p class="pt-4">Traditional cremation urns are usually crafted from materials such as metal, ceramic, wood or
+            glass. A standard cremation urn is roughly comparable to a large vase or a small kitchen appliance, like a
+            blender. Both functional and aesthetically pleasing, they often feature intricate designs and engravings.
+            Families choose decorative full-size urns when they want to keep a loved one's ashes at home or place them
+            in a glass-front mausoleum niche. Though a decorative urn may also be placed in a columbarium or buried in
+            the ground, families often choose urns with simpler designs for those types of memorials. Full-size urns
+            generally cost in the hundreds of dollars.**</p>
+
+        <h3 class="pt-8 md:text-2xl sm:text-xl">Keepsake urns</h3>
+        <p class="pt-4">Like full-size urns, keepsake urns are smaller counterparts that allow multiple family members
+            to divide a loved one's ashes. Like full-size urns, keepsake urns are often made of metal, stone or wood and
+            come in a wide range of designs, such as a heart, bird, acorn or even a stained-glass lamp. If you wish, a
+            keepsake urn may be personalized with engravings to reflect your loved one's unique style and memory.</p>
+
+        <img src="./images/keepsake_urns.jpg" alt="Keepsake Urns">
+
+
+
+
+        <h1 class="pt-8 md:text-4xl sm:text-xl">An alternative cremation option</h1>
+        <p class="pt-4">Also known as flameless cremation or alkaline hydrolysis, <u>water cremation</u> uses warm
+            water, alkaline chemicals, heat and gentle agitation to speed up the natural process that takes place after
+            burial. The bone fragments that remain are then carefully processed into ashes that are similar to those
+            produced by traditional cremation. Some people feel that water cremation is a gentler process than
+            flame-based cremation.</p>
+
+        <p class="pt-4">A water cremation without a service costs between $2,000 and $4,000.**</p>
+
+        <p class="pt-4">No container is used during water cremation, but if there's a service beforehand, a casket or
+            container may be needed. Families receive back ashes, and so they may choose an urn of some kind.</p>
+
+
+        <h1 class="pt-8 md:text-4xl sm:text-xl">What's the cheapest way to be cremated?</h1>
+        <p class="pt-4">The least expensive <u>cremation option</u> is simple cremation, sometimes known as direct
+            cremation. A simple cremation <b>typically costs $700 to $5,000.**</b> It does not include a viewing or
+            memorial service.</p>
+
+        <p class="pt-4">People choose this option for themselves or their loved ones to keep costs at a minimum. And
+            though it's <b>sometimes called cremation without a ceremony</b>, that doesn't have to be the case. If you
+            choose simple cremation, you can still host an informal gathering at home or at a scattering site without
+            adding to the cost. What matters is being with friends and family to remember, reflect and heal.</p>
+
+        <img src="./images/cheapest_way_cremation.jpg" alt="Cheapest way of cremation">
+
+
+
+        <h1 class="pt-8 md:text-4xl sm:text-xl">Why do people choose cremation?</h1>
+        <p class="pt-4">There are many reasons people choose cremation either for themselves or their loved ones. These
+            reasons range from <b>religious considerations to personal preferences</b>.</p>
+
+        <p class="pt-4">Here are some of the more common reasons families choose cremation:</p>
+
+        <p class="pt-4"><b>Flexible memorial options</b>: Cremation allows for flexibility that traditional burial does
+            not. When you choose cremation, you have as much time as you need to plan a funeral, memorial or celebration
+            of life. You can hold a viewing for nearby family and friends before the cremation and then host a larger
+            memorial or <u>scattering service</u> weeks or months later for friends and family who need to make travel
+            plans and take off work. That's especially beneficial for those who live in different parts of the country
+            or world. Cremation also enables families to focus on the immediacy of their grief and decide on the details
+            of a service when they feel ready.</p>
+
+        <p class="pt-4"><b>Customization</b>: Cremation allows for nearly endless customization and creativity. Families
+            have many special options for memorializing a loved one. Cremated remains can be <u>placed in an ocean
+                reef</u> or incorporated into jewelry or art. They can be pressed into vinyl records, made into
+            fireworks, placed in a mausoleum niche, scattered from a mountaintop and even <u>launched into space</u>.
+            The options are endless and can be as unique as the life being honored.</p>
+
+        <p class="pt-4"><b>Lower cost</b>: Cremation can cost less than traditional burial. A simple cremation is the
+            least expensive type of cremation and can cost thousands less than a traditional burial with a funeral. A
+            cremation with a service can also cost, as you can opt out of a casket or cemetery plot, for instance.</p>
+
+        <p class="pt-4"><b>No religious affiliation</b>: More Americans than ever claim to have no affiliation with a
+            particular religion. Since many funeral and burial traditions are rooted in religious beliefs, many people
+            are choosing cremation as a way to create a new tradition.</p>
+
+
+
+        <h1 class="pt-8 md:text-4xl sm:text-xl">Our complimentary cremation offerings</h1>
+        <p class="pt-4">We know that planning a cremation isn't something families do every day. It's important to
+            understand that not all providers are the same, and there are many things that set us apart, including:</p>
+
+        <p class="pt-4"><b>Concierge Delivery™</b>: If you wish, a trusted member of our staff will hand-deliver your
+            loved one after the cremation to your home, clergy or cemetery.</p>
+
+        <p class="pt-4"><b>Signature Dedication™</b>: In keeping with our pledge to treat every family with respect, we
+            provide a special moment before you take your loved one home.</p>
+
+        <p class="pt-4"><b>Scattering assistance</b>: We offer guidance on scattering ashes over land and sea and can
+            also provide tips for a scattering ceremony.</p>
+
+        <p class="pt-4"><b>Celebration of life planning</b>: When you choose to hold a celebration of life at one of our
+            funeral homes or celebration of life centers, planning services are part of the package.</p>
+
+        <img class="pt-4" src="./images/complementary_cremation_plan.jpg" alt="Complementary Offerings">
+
+
+
+
+        <h1 class="pt-8 md:text-4xl sm:text-xl">More and more families are choosing cremation</h1>
+        <p class="pt-4"><u>The Cremation Association of North America</u> projects that by 2028, 67% of Americans will
+            choose cremation, compared to 33% burial. These numbers are up from a little more than a decade ago, when
+            approximately 45% chose cremation. Numbers are even higher in Canada, where the cremation rate was 75% in
+            2023. U.S. cremation rates <u>vary by region</u>, from around 33% in Mississippi to more than 83% in Nevada.
+        </p>
+
+        <p class="pt-4">**Prices and selections outlined in this story will vary by Dignity Memorial provider.</p>
+
+
+    </section>
+
+
+
+
+    <section class="py-16 px-4 bg-teal-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Side - Guide Images -->
+                <img src="./images/from.png" alt="Planning guide" class="w-full">
+
+                <!-- Right Side - Form -->
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h2 class="text-3xl font-light text-gray-800 mb-6" style="font-family: 'Times New Roman', serif;">
+                        What affects funeral and cremation costs?
+                    </h2>
+
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        There are hundreds of decisions that must be made when planning a funeral, cremation or memorial
+                        service, and making funeral arrangements can often seem confusing or overwhelming. Because
+                        there's no one-size-fits-all approach to planning a funeral or memorial service, there are
+                        different costs and expenses to consider. Learn what to expect and get your free <i>Guide to
+                            Understanding Funeral and Cremation Costs today</i>.
+                    </p>
+
+                    <p class="text-sm text-gray-500 mb-6 italic">
+                        * indicates a required field
+                    </p>
+
+                    <form class="space-y-4">
+                        <!-- First Name -->
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">
+                                FIRST NAME *
+                            </label>
+                            <input type="text" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent">
+                        </div>
+
+                        <!-- Last Name -->
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">
+                                LAST NAME *
+                            </label>
+                            <input type="text" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent">
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">
+                                EMAIL *
+                            </label>
+                            <input type="email" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent">
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">
+                                PHONE NUMBER *
+                            </label>
+                            <input type="tel" required placeholder="+1"
+                                class="w-full px-3 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent">
+                        </div>
+
+                        <!-- Zip Code -->
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">
+                                ZIP CODE *
+                            </label>
+                            <input type="text" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent">
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit"
+                            class="w-full bg-teal-500 text-white py-3 px-6 rounded-none hover:bg-teal-600 transition-colors duration-300 font-medium uppercase tracking-wider mt-6">
+                            GET A FREE GUIDE & QUOTE
+                        </button>
+                    </form>
+
+                    <!-- Privacy Notice -->
+                    <p class="text-xs text-gray-500 mt-6 leading-relaxed">
+                        We will never sell your information or use it for any purpose except official Dignity Memorial
+                        correspondence. See our <a href="#" class="text-teal-600 hover:underline">privacy policy</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="w-1/2 mx-auto px-4 py-8 my-8">
+        
+        <h2 class="md:text-xl sm:text-sm">Related Content</h2>
+        
+        <p class="py-2"><a href=""><u>The Best Gift</u></a></p>
+        <p class="py-2"><a href=""><u>VA Burial Benefits</u></a></p>
+        <p class="py-2"><a href=""><u>Cost of a Cremation Funeral</u></a></p>
+
+
+        <h3 class="pt-16 md:text-xl sm:text-sm font-normal">TAGS</h3>
+        <div class="flex gap-4 pt-6">
+            <!-- COST Button -->
+            <button
+                class="px-6 py-3 border-2 border-teal-400 bg-white text-gray-700 font-medium text-sm tracking-wide hover:bg-teal-50 transition-colors duration-200">
+                COST
+            </button>
+
+            <!-- CREMATION Button -->
+            <button
+                class="px-6 py-3 border-2 border-teal-400 bg-white text-gray-700 font-medium text-sm tracking-wide hover:bg-teal-50 transition-colors duration-200">
+                CREMATION
+            </button>
+        </div>
+    </section>
+
+
+
+
+     <!-- Footer -->
+    <footer class="bg-gray-100 py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <!-- Logo Section -->
+            <div class="text-center mb-8">
+                <div class="flex items-center justify-center mb-4">
+                    <span class="text-2xl text-gray-700 italic mr-4">Every Detail Remembered</span>
+                    <div class="w-px h-8 bg-gray-400 mx-4"></div>
+                    <span class="text-2xl text-gray-700 font-bold">Dignity</span>
+                    <span class="text-2xl text-gray-700">™</span>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div
+                class="flex flex-wrap justify-center gap-8 text-sm text-gray-600 uppercase tracking-wider font-sans mb-8">
+                <a href="#" class="hover:text-gray-800">ABOUT US</a>
+                <a href="#" class="hover:text-gray-800">CONTACT US</a>
+                <a href="#" class="hover:text-gray-800">CAREERS</a>
+                <a href="#" class="hover:text-gray-800">PRIVACY POLICY</a>
+                <a href="#" class="hover:text-gray-800">TERMS OF SERVICE</a>
+                <a href="#" class="hover:text-gray-800">ACCESSIBILITY</a>
+                <a href="#" class="hover:text-gray-800">DO NOT CALL</a>
+                <a href="#" class="hover:text-gray-800">
+                    <svg class="w-4 h-4 inline" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 9 5.16-.74 9-4.45 9-9V7l-10-5z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Copyright Footer -->
+    <footer class="bg-gray-700 py-6">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-gray-300 text-sm mb-4">© 2025 SCI SHARED RESOURCES, LLC. ALL RIGHTS RESERVED</p>
+            <p class="text-gray-400 text-xs mb-2">
+                <a href="#" class="hover:text-gray-300">Do Not Sell or Share My Personal Information</a>
+            </p>
+            <p class="text-gray-400 text-xs leading-relaxed max-w-4xl mx-auto">
+                This site is provided as a service of SCI Shared Resources, LLC. The Dignity Memorial brand name is used
+                to identify a network of licensed funeral, cremation and cemetery providers that include affiliates of
+                Service Corporation International, 1929 Allen Parkway, Houston, Texas. With over 2,000 locations,
+                Dignity Memorial providers proudly serve over 375,000 families a year.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
