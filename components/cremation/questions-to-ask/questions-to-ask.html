@@ -1,15 +1,689 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dignity Memorial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
 
-    
+<body>
+
+
+
+    <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-serif text-gray-800">Dignity<sup class="text-sm">®</sup></h1>
+                    <span class="text-sm text-gray-600 ml-2">MEMORIAL</span>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <div class="relative group">
+                        <button id="planDropdownBtn"
+                            class="flex items-center space-x-1 text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors">
+                            <span class="text-sm font-medium tracking-wide">PLAN A FUNERAL OR CREMATION</span>
+                            <svg class="w-4 h-4 transition-transform duration-200" id="planDropdownArrow" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <!-- Dropdown Menu -->
+                        <div id="planDropdown"
+                            class="absolute top-full left-0 w-96 bg-white shadow-lg border border-gray-200 opacity-0 invisible transform translate-y-2 transition-all duration-200 z-50">
+                            <div class="p-8">
+                                <div class="grid grid-cols-2 gap-8">
+                                    <!-- Immediate Need Column -->
+                                    <div>
+                                        <h3 class="text-xl font-serif text-gray-800 mb-4">Immediate Need</h3>
+                                        <a href="#"
+                                            class="block text-teal-600 hover:text-teal-700 text-sm font-medium border-b border-teal-600 pb-1 mb-4 transition-colors">
+                                            Death has occurred or is near
+                                        </a>
+                                    </div>
+
+                                    <!-- Plan Ahead Column -->
+                                    <div>
+                                        <h3 class="text-xl font-serif text-gray-800 mb-4">Plan Ahead</h3>
+                                        <a href="#"
+                                            class="block text-teal-600 hover:text-teal-700 text-sm font-medium border-b border-teal-600 pb-1 mb-4 transition-colors">
+                                            Pre-plan a funeral or cremation
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#"
+                        class="text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors text-sm font-medium tracking-wide">
+                        FIND OBITUARIES AND SERVICES
+                    </a>
+
+                    <a href="#"
+                        class="text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors text-sm font-medium tracking-wide">
+                        FIND FUNERAL HOMES OR CEMETERIES
+                    </a>
+
+                    <div class="relative group">
+                        <button id="resourcesDropdownBtn"
+                            class="flex items-center space-x-1 text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors">
+                            <span class="text-sm font-medium tracking-wide">IDEAS AND RESOURCES</span>
+                            <svg class="w-4 h-4 transition-transform duration-200" id="resourcesDropdownArrow"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <!-- Resources Dropdown Menu -->
+                        <div id="resourcesDropdown"
+                            class="absolute top-full right-0 w-screen max-w-5xl bg-white shadow-lg border border-gray-200 opacity-0 invisible transform translate-y-2 transition-all duration-200 z-50">
+                            <div class="p-8">
+                                <div class="flex gap-8">
+                                    <!-- Left Column - Featured Content -->
+                                    <div class="w-1/3">
+                                        <div class="mb-6">
+                                            <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=300&h=200&fit=crop"
+                                                alt="Elderly couple on bench"
+                                                class="w-full h-32 object-cover rounded-lg mb-4">
+                                            <p class="text-xs text-gray-500 uppercase tracking-wide mb-2">FREE PRICING
+                                                GUIDE:</p>
+                                            <h3 class="text-lg font-serif text-gray-800 mb-3">Why pre-plan a funeral or
+                                                cremation?</h3>
+                                            <a href="#"
+                                                class="text-teal-600 hover:text-teal-700 text-sm font-medium">Learn
+                                                More</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Middle Column -->
+                                    <div class="w-1/3">
+                                        <div class="space-y-4">
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Prepaid
+                                                Funeral Plans</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Funeral
+                                                & Cremation Costs</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Cemetery
+                                                & Cremation Property</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Cremation</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Celebration
+                                                of Life</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Right Column -->
+                                    <div class="w-1/3">
+                                        <div class="space-y-4">
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Veterans
+                                                Burials & Funerals</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">When
+                                                Death Has Occurred</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Grief
+                                                & Sympathy</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Memorial
+                                                Services</a>
+                                        </div>
+
+                                        <div class="mt-8 pt-6 border-t border-gray-200">
+                                            <a href="#"
+                                                class="flex items-center text-teal-600 hover:text-teal-700 text-sm font-medium uppercase tracking-wide">
+                                                VIEW ALL RESOURCES
+                                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor"
+                                                    viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <button class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <script src="../script.js"></script>
+
+
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="bg-gray-50 border-b border-gray-200 py-3 px-8">
+        <div class="max-w-6xl mx-auto">
+            <ul class="flex items-center space-x-2 text-sm text-gray-600">
+                <li>
+                    <a href="#" class="hover:text-teal-600 transition duration-200">
+                        <span>HOME</span>
+                    </a>
+                </li>
+                <li class="flex items-center">
+                    <svg class="w-4 h-4 mx-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    <a href="#" class="hover:text-teal-600 transition duration-200">
+                        <span>CREMATION</span>
+                    </a>
+                </li>
+                <li class="flex items-center">
+                    <svg class="w-4 h-4 mx-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    <span class="text-gray-800 font-medium">CREMATION QUESTIONS</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="relative h-[500px] bg-cover bg-no-repeat"
+        style="background-image: url('./images/questions_to_ask.jpg');">
+        <!-- Overlay (optional, for darkening the image) -->
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+        <!-- Centered Text -->
+        <div
+            class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 w-3/5 mx-auto">
+            <h1 class="text-4xl font-bold mb-4">How Much Does the Average Cremation Cost in 2024?</h1>
+        </div>
+
+    </section>
+
+
+
+
+
+    <section class="w-1/2 mx-auto py-8">
+        <p class="py-4">If you've rarely or never shopped for <u>cremation</u>, you may find the process a bit daunting.
+        </p>
+
+        <p class="py-4">There are plenty of companies that will cremate a loved one—and nothing more. <b>When you choose
+                a Dignity
+                Memorial® provider, you're choosing professionalism, compassion and attention to detail that is second
+                to none</b>. Serving families is our passion and our commitment.</p>
+
+        <p class="py-4">That said, we know that most people are unfamiliar with cremation, and there's a lot to learn.
+            We encourage
+            you to <u>familiarize yourself with your options</u> and take the time to determine the right choice for
+            your family. The best way to do that is to ask questions—lots of questions—that will help you understand
+            exactly what to expect from each provider with whom you talk.</p>
+
+        <p class="py-4">These 11 questions will help you get a good idea of how a cremation provider operates. Keep them
+            handy and
+            take notes as you make calls.</p>
+
+
+
+        <!-- Question 1 -->
+        <div class="flex items-start gap-4 mb-6 mt-6">
+            <img src="./images/1.jpg" alt="Question 1" class="w-8 h-8 mt-1">
+            <div>
+                <h3 class="md:text-2xl sm:text-sm font-medium text-gray-800 mb-2 italic">Are you licensed and insured?
+                </h3>
+                <p class="text-gray-700">All Dignity Memorial providers are licensed and insured in the states in which
+                    they operate. Never work with an unlicensed or uninsured cremation provider. <u>Find a cremation
+                        provider near you</u>.</p>
+            </div>
+        </div>
+
+
+        <!-- Question 2 -->
+        <div class="flex items-start gap-4 mb-6 mt-16">
+            <img src="./images/second.jpg" alt="Question 2" class="w-8 h-8 mt-1">
+            <div>
+                <h3 class="md:text-2xl sm:text-sm text-lg font-medium text-gray-800 mb-2 italic">Do you operate your
+                    crematory? Are crematory
+                    operators certified?</h3>
+                <p class="text-gray-700">Dignity Memorial providers own their own crematories or work with trusted
+                    crematory partners. All employ crematory operators who are licensed and certified by Cremation
+                    Association of North America, or <u>CANA</u>. Having our own crematories or working with trusted
+                    partners
+                    allows us to ensure that your loved one is well cared for throughout the <u>cremation process</u>.
+                    Cremation providers without their own crematories may not always know the whereabouts of your loved
+                    one. What happens when a loved one is passed from the provider with whom a family contracts to
+                    another operator? This provider may lose control of the quality of the process and level of care.
+                </p>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+    <!-- Cremation Guide Section -->
+    <section class="relative bg-teal-100 my-16">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between max-w-6xl mx-auto">
+
+                <!-- Left Image - Extending beyond section bounds -->
+                <div class="relative -mt-12 -mb-12 flex-shrink-0">
+                    <img src="./images/form.png" alt="Cremation Guide"
+                        class="w-64 h-80 object-cover rounded-lg shadow-lg">
+                </div>
+
+                <!-- Center Content -->
+                <div class="flex-1 px-8">
+                    <h2 class="text-2xl font-bold text-left text-gray-800 mb-4">
+                        Get A Guide for Families Choosing Cremation
+                    </h2>
+                    <p class="text-gray-600 text-lg leading-relaxed text-left">
+                        Learn what you need to know to choose the best provider for your family's needs.
+                    </p>
+                </div>
+
+                <!-- Right Button -->
+                <div class="flex-shrink-0">
+                    <button
+                        class="bg-teal-400 hover:bg-teal-500 text-white font-semibold px-8 py-3 rounded-md transition-colors duration-200 shadow-md hover:shadow-lg">
+                        DOWNLOAD NOW
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Questions 3-10 -->
+    <section class="w-1/2 mx-auto py-8">
+        <!-- Question 3 -->
+        <div class="flex items-start gap-4 mb-6">
+            <img src="./images/third.jpg" alt="Question 3" class="w-8 h-8 mt-1">
+            <div>
+                <h3 class="md:text-2xl sm:text-sm font-medium text-gray-800 mb-2 italic">What's included in your
+                    cremation price? Are
+                    there additional fees?</h3>
+                <p class="text-gray-700">The old adage "you get what you pay for" couldn't be more true than when it
+                    comes to the services cremation providers offer.</p>
+                <p class="text-gray-700 py-4">The appeal of a low-cost cremation provider often vanishes when you find
+                    out
+                    that the price you're quoted isn't the price you're going to pay. Other cremation providers may
+                    charge extra for mileage. They may charge for the removal of a pacemaker or tack on a fee for a
+                    larger loved one. We don't do that.</p>
+                <p>We offer affordable packages, and we're transparent about our pricing.</p>
+
+            </div>
+        </div>
+
+
+        <!-- Question 4 -->
+        <div class="flex items-start gap-4 mb-6 mt-16">
+            <img src="./images/fourth.jpg" alt="Question 4" class="w-8 h-8 mt-1">
+            <div>
+                <h3 class="md:text-2xl sm:text-sm font-medium text-gray-800 mb-2 italic">What payment types do you
+                    accept?</h3>
+                <p class="text-gray-700 py-4">We encourage families to <u>prearrange cremation services</u>, but we know
+                    that's not always possible. It's for that reason that we work with families to help them figure out
+                    how to cover cremation expenses.
+                </p>
+                <ul class="list-disc pl-8 text-gray-700">
+                    <li>Pre-need funeral insurance</li>
+                    <li>Final expense insurance</li>
+                    <a href="">
+                        <li><u>Burial insurance</u></li>
+                    </a>
+                    <li>Life insurance</li>
+                    <li>Credit card</li>
+                    <li>Check</li>
+                    <li>Cash</li>
+                </ul>
+
+                <p class="text-gray-700 py-4">Plus, our <b>experience dealing with insurance</b> is often helpful for
+                    the families we serve. We can
+                    assist with the logistics, <b>even filing a claim on your behalf or providing short-term
+                        assistance</b> while you're waiting for insurance to pay out.</p>
+            </div>
+        </div>
+
+
+
+        <!-- Question 5 -->
+        <div class="flex items-start gap-4 mb-6 mt-16">
+            <img src="./images/fifth.jpg" alt="Question 5" class="w-8 h-8 mt-1">
+            <div>
+                <h3 class="md:text-2xl sm:text-sm font-medium text-gray-800 mb-2 italic">
+                    What's your star rating on Google? Why?</h3>
+                <p class="text-gray-700 py-4">It's one thing for a business to claim great service—it's another for a
+                    business customers to claim that business has great service. <b>Google gives people a chance to rank
+                        a business</b> after interacting with it. One star indicates poor service; five stars indicates
+                    excellent service. The higher a business Google star rating, the greater your chances are of having
+                    an outstanding experience.</p>
+
+                <p class="text-gray-700"><b>Hundreds of thousands of families trust us with their loved ones</b> each
+                    year—and they consistently give us five-star ratings for exceptional care and a high level of
+                    personal attention.</p>
+
+            </div>
+        </div>
+
+
+        <!-- Question 6 -->
+        <div class="flex items-start gap-4 mb-6 mt-16">
+            <img src="./images/sixth.jpg" alt="Question 6" class="w-8 h-8 mt-1">
+            <div>
+                <h3 class="md:text-2xl sm:text-sm font-medium text-gray-800 mb-2 italic">
+                    Are you exclusively in custody of my loved one?</h3>
+                <p class="text-gray-700 py-4">Other cremation providers may say they have exclusive custody of your
+                    loved
+                    one, but many don't own their own crematories and outsource cremations to third parties. <b>Your
+                        Dignity Memorial provider or a trusted partner has custody</b> from the time our transportation
+                    professionals bring your loved one into our care until they're returned to your family.</p>
+
+            </div>
+        </div>
+
+
+        <!-- Question 7 -->
+        <div class="flex items-start gap-4 mb-6 mt-16">
+            <img src="./images/seventh.jpg" alt="Question 7" class="w-8 h-8 mt-1">
+            <div>
+                <h3 class="md:text-2xl sm:text-sm font-medium text-gray-800 mb-2 italic">
+                    What procedures do you have in place that ensure the ashes returned to me are my loved one's?</h3>
+                <p class="text-gray-700 py-4">From the moment we take your loved one into our care until the moment we
+                    return
+                    them to you, <b>we safeguard their identification through every step</b> of the <u>cremation
+                        process</u>. Our custody-of-care program means that we check, cross-check and check again.</p>
+
+            </div>
+        </div>
+
+
+        <!-- Question 8 -->
+        <div class="flex items-start gap-4 mb-6 mt-16">
+            <img src="./images/eight.jpg" alt="Question 8" class="w-8 h-8 mt-1">
+            <div>
+                <h3 class="md:text-2xl sm:text-sm font-medium text-gray-800 mb-2 italic">
+                    What are your customer care hours?</h3>
+                <p class="text-gray-700 py-4">You can reach your Dignity Memorial provider <b>24 hours a day, 7 days a
+                        week</b>.</p>
+            </div>
+
+        </div>
+
+
+
+        <!-- Question 9 -->
+        <div class="flex items-start gap-4 mb-6 mt-16">
+            <img src="./images/nine.jpg" alt="Question 9" class="w-8 h-8 mt-1">
+            <div>
+                <h3 class="md:text-2xl sm:text-sm font-medium text-gray-800 mb-2 italic">
+                    What do you do with my personal information?</h3>
+                <p class="text-gray-700 py-4">We take your privacy very seriously. We have <b>stringent procedures in
+                        place
+                        to protect your information</b>, and we will never sell it to anyone. For more information, see
+                    our <u>privacy policy</u>.</b>.</p>
+            </div>
+        </div>
+
+
+
+
+        <!-- Question 10 -->
+        <div class="flex items-start gap-4 mb-6 mt-16">
+            <img src="./images/ten.jpg" alt="Question 10" class="w-8 h-8 mt-1">
+            <div>
+                <h3 class="md:text-2xl sm:text-sm font-medium text-gray-800 mb-2 italic">
+                    What happens if I'm dissatisfied with your service? Is there a satisfaction guarantee or a partial
+                    refund if I'm dissatisfied?</h3>
+                <p class="text-gray-700 py-4">Our cremation services come with a 100% Service Guarantee. We strive to
+                    get
+                    every detail right the first time, every time. Should any detail of our service not meet the
+                    expectations as promised in our agreement, we'll do everything we can to make it right, up to
+                    refunding that portion of the service. That's part of the <u>Dignity Difference</u>.
+
+                </p>
+            </div>
+        </div>
+
+
+        <!-- Question 11 -->
+        <div class="flex items-start gap-4 mb-6 mt-16">
+            <img src="./images/eleven.jpg" alt="Question 11" class="w-8 h-8 mt-1">
+            <div>
+                <h3 class="md:text-2xl sm:text-sm font-medium text-gray-800 mb-2 italic">
+                    May I have a location tour? Or is there a virtual tour available?</h3>
+                <p class="text-gray-700 py-4">We can do either one. We'd love to host you for an in-person tour, or
+                    we'll
+                    show you around virtually.
+
+                </p>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+    <!-- Quotation Section -->
+    <section class="bg-zinc-200 w-1/2 mx-auto py-8 px-4">
+        <img class="px-8" src="./images/quotation.png" alt="Quotation Image">
+        <p class="italic leading-7 py-8 px-8">What I can't emphasize to you enough is that choosing the right funeral
+            home/ cremation service for your loved one and your family can make all the difference in the world in the
+            way that you get to say goodbye to your family member. ... It is important that I mention we did NOT go with
+            a company that has a super-low set price for this service and this service only, we didn't want my Dad to be
+            just another name or number, we wanted him well taken care of by a family business.</p>
+        <p class="text-teal-300 font-bold px-8">—Joanne R., Calabash, NC</p>
+
+    </section>
+
+
+    <p class="w-1/2 mx-auto text-gray-700 pt-8">Not every cremation provider treats every person with the dignity and
+        respect Dignity Memorial insists upon. Nor does every provider take the measures we do to ensure the loved ones
+        we bring into our care are the same loved ones we return to families. Get help now.</p>
+
+
+    <section class="py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Side - Guide Images -->
+                <img src="./images/form.png" alt="Planning guide" class="w-full">
+
+                <!-- Right Side - Form -->
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h2 class="text-3xl font-light text-gray-800 mb-6" style="font-family: 'Times New Roman', serif;">
+                        Plan a memorable cremation funeral
+                    </h2>
+
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Planning a personalized cremation funeral or memorial is an event unlike any other. We created a
+                        guide to help you understand all of your cremation options and how to plan a truly memorable
+                        event. <i>Understanding Cremation—A Complete Guide</i> is free, and it will help you start
+                        planning today. Then, when you are ready, a Dignity Memorial provider will be there to walk you
+                        through every step of the cremation process.
+                    </p>
+
+                    <p class="text-sm text-gray-500 mb-6 italic">
+                        * indicates a required field
+                    </p>
+
+                    <form class="space-y-4">
+                        <!-- First Name -->
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">
+                                FIRST NAME *
+                            </label>
+                            <input type="text" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent">
+                        </div>
+
+                        <!-- Last Name -->
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">
+                                LAST NAME *
+                            </label>
+                            <input type="text" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent">
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">
+                                EMAIL *
+                            </label>
+                            <input type="email" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent">
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">
+                                PHONE NUMBER *
+                            </label>
+                            <input type="tel" required placeholder="+1"
+                                class="w-full px-3 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent">
+                        </div>
+
+                        <!-- Zip Code -->
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">
+                                ZIP CODE *
+                            </label>
+                            <input type="text" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent">
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit"
+                            class="w-full bg-teal-500 text-white py-3 px-6 rounded-none hover:bg-teal-600 transition-colors duration-300 font-medium uppercase tracking-wider mt-6">
+                            GET A FREE GUIDE & QUOTE
+                        </button>
+                    </form>
+
+                    <!-- Privacy Notice -->
+                    <p class="text-xs text-gray-500 mt-6 leading-relaxed">
+                        We will never sell your information or use it for any purpose except official Dignity Memorial
+                        correspondence. See our <a href="#" class="text-teal-600 hover:underline">privacy policy</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <hr class="border-t-2 border-gray-300 my-8 mx-32">
+
+    <!-- Related Content -->
+    <section class="w-1/2 mx-auto px-4 py-8 my-8">
+
+        <h2 class="md:text-xl sm:text-sm italic">Related Content</h2>
+
+        <p class="py-2 pt-4"><a href=""><u>Celestis Memorial Spaceflight</u></a></p>
+        <p class="py-2"><a href=""><u>Columbarium Options & Cremation Niches</u></a></p>
+        <p class="py-2"><a href=""><u>Family Plots & Companion Graves</u></a></p>
+
+
+        <h3 class="pt-16 md:text-xl sm:text-sm font-normal">TAGS</h3>
+        <div class="flex gap-4 pt-6">
+            <!-- COST Button -->
+            <button
+                class="px-6 py-3 border-2 border-teal-400 bg-white text-gray-700 font-medium text-sm tracking-wide hover:bg-teal-50 transition-colors duration-200">
+                ADVICE
+            </button>
+
+            <!-- CREMATION Button -->
+            <button
+                class="px-6 py-3 border-2 border-teal-400 bg-white text-gray-700 font-medium text-sm tracking-wide hover:bg-teal-50 transition-colors duration-200">
+                CREMATION
+            </button>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <!-- Logo Section -->
+            <div class="text-center mb-8">
+                <div class="flex items-center justify-center mb-4">
+                    <span class="text-2xl text-gray-700 italic mr-4">Every Detail Remembered</span>
+                    <div class="w-px h-8 bg-gray-400 mx-4"></div>
+                    <span class="text-2xl text-gray-700 font-bold">Dignity</span>
+                    <span class="text-2xl text-gray-700">™</span>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div
+                class="flex flex-wrap justify-center gap-8 text-sm text-gray-600 uppercase tracking-wider font-sans mb-8">
+                <a href="#" class="hover:text-gray-800">ABOUT US</a>
+                <a href="#" class="hover:text-gray-800">CONTACT US</a>
+                <a href="#" class="hover:text-gray-800">CAREERS</a>
+                <a href="#" class="hover:text-gray-800">PRIVACY POLICY</a>
+                <a href="#" class="hover:text-gray-800">TERMS OF SERVICE</a>
+                <a href="#" class="hover:text-gray-800">ACCESSIBILITY</a>
+                <a href="#" class="hover:text-gray-800">DO NOT CALL</a>
+                <a href="#" class="hover:text-gray-800">
+                    <svg class="w-4 h-4 inline" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 9 5.16-.74 9-4.45 9-9V7l-10-5z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Copyright Footer -->
+    <footer class="bg-gray-700 py-6">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-gray-300 text-sm mb-4">© 2025 SCI SHARED RESOURCES, LLC. ALL RIGHTS RESERVED</p>
+            <p class="text-gray-400 text-xs mb-2">
+                <a href="#" class="hover:text-gray-300">Do Not Sell or Share My Personal Information</a>
+            </p>
+            <p class="text-gray-400 text-xs leading-relaxed max-w-4xl mx-auto">
+                This site is provided as a service of SCI Shared Resources, LLC. The Dignity Memorial brand name is used
+                to identify a network of licensed funeral, cremation and cemetery providers that include affiliates of
+                Service Corporation International, 1929 Allen Parkway, Houston, Texas. With over 2,000 locations,
+                Dignity Memorial providers proudly serve over 375,000 families a year.
+            </p>
+        </div>
+    </footer>
 
 
 </body>
+
 </html>
