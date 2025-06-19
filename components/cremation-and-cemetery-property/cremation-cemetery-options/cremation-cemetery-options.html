@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dignity Memorial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+
+    <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-serif text-gray-800">Dignity<sup class="text-sm">®</sup></h1>
+                    <span class="text-sm text-gray-600 ml-2">MEMORIAL</span>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <div class="relative group">
+                        <button id="planDropdownBtn"
+                            class="flex items-center space-x-1 text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors">
+                            <span class="text-sm font-medium tracking-wide">PLAN A FUNERAL OR CREMATION</span>
+                            <svg class="w-4 h-4 transition-transform duration-200" id="planDropdownArrow" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <!-- Dropdown Menu -->
+                        <div id="planDropdown"
+                            class="absolute top-full left-0 w-96 bg-white shadow-lg border border-gray-200 opacity-0 invisible transform translate-y-2 transition-all duration-200 z-50">
+                            <div class="p-8">
+                                <div class="grid grid-cols-2 gap-8">
+                                    <!-- Immediate Need Column -->
+                                    <div>
+                                        <h3 class="text-xl font-serif text-gray-800 mb-4">Immediate Need</h3>
+                                        <a href="#"
+                                            class="block text-teal-600 hover:text-teal-700 text-sm font-medium border-b border-teal-600 pb-1 mb-4 transition-colors">
+                                            Death has occurred or is near
+                                        </a>
+                                    </div>
+
+                                    <!-- Plan Ahead Column -->
+                                    <div>
+                                        <h3 class="text-xl font-serif text-gray-800 mb-4">Plan Ahead</h3>
+                                        <a href="#"
+                                            class="block text-teal-600 hover:text-teal-700 text-sm font-medium border-b border-teal-600 pb-1 mb-4 transition-colors">
+                                            Pre-plan a funeral or cremation
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#"
+                        class="text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors text-sm font-medium tracking-wide">
+                        FIND OBITUARIES AND SERVICES
+                    </a>
+
+                    <a href="#"
+                        class="text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors text-sm font-medium tracking-wide">
+                        FIND FUNERAL HOMES OR CEMETERIES
+                    </a>
+
+                    <div class="relative group">
+                        <button id="resourcesDropdownBtn"
+                            class="flex items-center space-x-1 text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors">
+                            <span class="text-sm font-medium tracking-wide">IDEAS AND RESOURCES</span>
+                            <svg class="w-4 h-4 transition-transform duration-200" id="resourcesDropdownArrow"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <!-- Resources Dropdown Menu -->
+                        <div id="resourcesDropdown"
+                            class="absolute top-full right-0 w-screen max-w-5xl bg-white shadow-lg border border-gray-200 opacity-0 invisible transform translate-y-2 transition-all duration-200 z-50">
+                            <div class="p-8">
+                                <div class="flex gap-8">
+                                    <!-- Left Column - Featured Content -->
+                                    <div class="w-1/3">
+                                        <div class="mb-6">
+                                            <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=300&h=200&fit=crop"
+                                                alt="Elderly couple on bench"
+                                                class="w-full h-32 object-cover rounded-lg mb-4">
+                                            <p class="text-xs text-gray-500 uppercase tracking-wide mb-2">FREE PRICING
+                                                GUIDE:</p>
+                                            <h3 class="text-lg font-serif text-gray-800 mb-3">Why pre-plan a funeral or
+                                                cremation?</h3>
+                                            <a href="#"
+                                                class="text-teal-600 hover:text-teal-700 text-sm font-medium">Learn
+                                                More</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Middle Column -->
+                                    <div class="w-1/3">
+                                        <div class="space-y-4">
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Prepaid
+                                                Funeral Plans</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Funeral
+                                                & Cremation Costs</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Cemetery
+                                                & Cremation Property</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Cremation</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Celebration
+                                                of Life</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Right Column -->
+                                    <div class="w-1/3">
+                                        <div class="space-y-4">
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Veterans
+                                                Burials & Funerals</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">When
+                                                Death Has Occurred</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Grief
+                                                & Sympathy</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Memorial
+                                                Services</a>
+                                        </div>
+
+                                        <div class="mt-8 pt-6 border-t border-gray-200">
+                                            <a href="#"
+                                                class="flex items-center text-teal-600 hover:text-teal-700 text-sm font-medium uppercase tracking-wide">
+                                                VIEW ALL RESOURCES
+                                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor"
+                                                    viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <button class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="bg-gray-50 border-b border-gray-200 py-3 px-8">
+        <div class="max-w-6xl mx-auto">
+            <ul class="flex items-center space-x-2 text-sm text-gray-600">
+                <li>
+                    <a href="#" class="hover:text-teal-600 transition duration-200">
+                        <span>HOME</span>
+                    </a>
+                </li>
+                <li class="flex items-center">
+                    <svg class="w-4 h-4 mx-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    <a href="#" class="hover:text-teal-600 transition duration-200">
+                        <span>CREMATION</span>
+                    </a>
+                </li>
+                <li class="flex items-center">
+                    <svg class="w-4 h-4 mx-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    <span class="text-gray-800 font-medium">CREMATION CEMETERY PROPERTY</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-[500px] bg-cover bg-no-repeat"
+        style="background-image: url('./images/cremation_cemetery_options.jpg');">
+        <!-- Overlay (optional, for darkening the image) -->
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+        <!-- Centered Text -->
+        <div
+            class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 w-3/5 mx-auto">
+            <h1 class="md:text-6xl sm:text-xl font-bold mb-4">Cremation Cemetery Options</h1>
+        </div>
+
+    </section>
+
+
+    <div class="w-1/2 mx-auto my-8 text-center">
+
+        <p>Families often gather for a funeral or memorial service before or after a loved one's cremation, but what
+            will happen in the weeks, months and years to come? Establishing a permanent place to visit, remember and
+            reflect can help with the grieving process and create a lasting legacy. Many cemeteries offer a wide range
+            of customizable options for a loved one's ashes, including scattering gardens, ground burial, mausoleum
+            niches, columbaria, pedestals, benches, boulders and more.</p>
+
+    </div>
+
+
+    <hr class="border-2 w-1/5 mx-auto my-16 border-gray-500">
+
+
+
+    <!-- Cremation Guide Section -->
+    <section class="relative bg-teal-100 my-16">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between max-w-6xl mx-auto">
+
+                <!-- Left Image - Extending beyond section bounds -->
+                <div class="relative -mt-12 -mb-12 flex-shrink-0">
+                    <img src="./images/form.png" alt="Cremation Guide"
+                        class="w-64 h-80 object-cover rounded-lg shadow-lg">
+                </div>
+
+                <!-- Center Content -->
+                <div class="flex-1 px-8">
+                    <h2 class="text-2xl font-bold text-left text-gray-800 mb-4">
+                        Get A Guide for Families Choosing Cremation
+                    </h2>
+                    <p class="text-gray-600 text-lg leading-relaxed text-left">
+                        Learn what you need to know to choose the best provider for your family's needs.
+                    </p>
+                </div>
+
+                <!-- Right Button -->
+                <div class="flex-shrink-0">
+                    <button
+                        class="bg-teal-400 hover:bg-teal-500 text-white font-semibold px-8 py-3 rounded-md transition-colors duration-200 shadow-md hover:shadow-lg">
+                        DOWNLOAD NOW
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Secion for all images with their descriptions -->
+    <!-- <section class="flex w-4/5 mx-auto my-8 gap-8">
+
+        <img class="" src="./images/start_image.jpg" alt="Private or community mausoleum">
+
+        <div class="py-8">
+            <h2 class="md:text-2xl sm:text-xl font-semibold italic">Private or community mausoleums</h2>
+            <p class="py-2">A mausoleum can be a private or community space for an individual, couple, family or special group.
+                Mausoleums may contain both caskets and <a href=""><u>cremation urns</u></a>, and can include indoor and outdoor spaces.
+                Cremation urns can be placed in granite-front or glass-front niches within the mausoleum. Private
+                walk-in mausoleums can also be customized with stained-glass windows, etchings or memorial sculptures to
+                reflect the unique personalities of those honored inside.</p>
+            <a class="font-semibold" href=""><u>LEARN MORE</u></a>
+        </div>
+
+    </section> -->
+
+
+
+    <section class="flex flex-col ">
+
+        <!-- 1 section -->
+        <div class="flex flex-row w-4/5 mx-auto my-8 gap-8">
+            <img src="./images/start_image.jpg" alt="Private or community mausoleum">
+
+            <div class="py-8">
+                <h2 class="md:text-2xl sm:text-xl font-semibold italic">Private or community mausoleums</h2>
+                <p class="py-2">A mausoleum can be a private or community space for an individual, couple, family or
+                    special group.
+                    Mausoleums may contain both caskets and <a href=""><u>cremation urns</u></a>, and can include indoor
+                    and outdoor spaces.
+                    Cremation urns can be placed in granite-front or glass-front niches within the mausoleum. Private
+                    walk-in mausoleums can also be customized with stained-glass windows, etchings or memorial
+                    sculptures to
+                    reflect the unique personalities of those honored inside.</p>
+                <a class="font-semibold" href=""><u>LEARN MORE</u></a>
+            </div>
+
+        </div>
+
+
+
+        <!-- 2 section -->
+        <div class="flex flex-row w-4/5 mx-auto my-8 gap-8">
+            <img src="./images/private_or_community_mausoleum.jpg" alt="Private or community mausoleum">
+
+            <div class="py-8">
+                <h2 class="md:text-2xl sm:text-xl font-semibold italic">
+                    Cremation gardens</h2>
+                <p class="py-2">Cremation gardens are beautifully landscaped areas designed to bury or <a
+                        href=""><u>scatter ashes</u></a>. Many also include outdoor seating, water features and
+                    statuary. Tribute options in a cremation garden can include pedestals, markers, benches, boulders
+                    and more. Options can be personalized to capture the history and passions of a special life.</p>
+                <a class="font-semibold" href=""><u>LEARN MORE</u></a>
+            </div>
+
+        </div>
+
+
+        <!-- 3 Section -->
+        <div class="flex flex-row w-4/5 mx-auto my-8 gap-8">
+            <img src="./images/cremation_gardens.jpg" alt="Cremation Gardens">
+
+            <div class="py-8">
+                <h2 class="md:text-2xl sm:text-xl font-semibold italic">
+                    Columbaria and cremation niches</h2>
+                <p class="py-2">A columbarium is a public or private space where a loved one's urn can be placed in a
+                    niche for permanent remembrance. It can be an indoor or outdoor structure, large or small, and is
+                    usually constructed of granite and personalized with etching and maybe even a bronze plaque. A
+                    cremation pillar is another name for a stand-alone outdoor columbarium.</p>
+                <p class="py-2">A columbarium might have granite-front niches with bronze plaques commemorating the
+                    loved one memorialized there. In contrast, glass-front niches are typically found inside a mausoleum
+                    or columbarium inside a funeral home. Families typically appreciate glass-front niches, because in
+                    addition to holding a loved one's ashes, they can also display cherished mementos and photographs.
+                    Some niches hold an individual loved one's ashes; companion niches can hold the ashes of two.</p>
+                <a class="font-semibold" href=""><u>LEARN MORE</u></a>
+            </div>
+        </div>
+
+
+        <!-- 4 section -->
+        <div class="flex flex-row w-4/5 mx-auto my-8 gap-8">
+            <img src="./images/columbaria_and_cremation_niches.jpg" alt="Private family estates">
+
+            <div class="py-8">
+                <h2 class="md:text-2xl sm:text-xl font-semibold italic">
+                    Private family estates</h2>
+                <p class="py-2">Private or semiprivate family estate areas are generally set off by walls, benches or
+                    hedges, and can accommodate in-ground burial of urns or a combination of <a
+                        href=""><u>caskets</u></a> and urns. They can also be used for aboveground inurnment. These
+                    estate areas can be customized to include beautiful landscaping, ornate gates, stone walls and other
+                    unique options, providing distinction for the family honored there.</p>
+                <a class="font-semibold" href=""><u>LEARN MORE</u></a>
+            </div>
+        </div>
+
+
+        <!-- 5 section -->
+        <div class="flex flex-row w-4/5 mx-auto my-8 gap-8">
+            <img src="./images/private_family_estates.jpg" alt="Private family estates">
+
+            <div class="py-8">
+                <h2 class="md:text-2xl sm:text-xl font-semibold italic">
+                    Memorials for cremation scatterings</h2>
+                <p class="py-2">Even if a loved one's ashes have been scattered somewhere else, a permanent memorial in
+                    a cemetery can serve as an important and lasting tribute to the life and legacy of that special
+                    person. Having a place to visit, reflect and remember can also be an important part of the grieving
+                    process. A special and permanent remembrance after scattering can include beautiful memorial options
+                    such as a statue, plaque, birdbath or sundial on <a href=""><u>cemetery grounds</u></a>.
+
+                </p>
+            </div>
+        </div>
+
+
+        <!-- 6 section -->
+        <div class="flex flex-row w-4/5 mx-auto my-8 gap-8">
+            <img src="./images/memorials_for_family.jpg" alt="Private family estates">
+
+            <div class="py-8">
+                <h2 class="md:text-2xl sm:text-xl font-semibold italic">
+                    Pedestals, benches and boulders</h2>
+                <p class="py-2">Personalized tributes such as cremation pedestals, benches and boulders provide a
+                    lasting memorial for future generations to visit, reflect and remember. Typically made of <a
+                        href=""><u>granite, bronze or marble,</u></a> pedestals and benches can be inscribed with names,
+                    dates, messages, mottoes, verses and more. Similarly, pedestals may mark where ashes are buried or
+                    may be hollowed to hold an urn placement. Cremation boulders offer the same personalization while
+                    blending in with the natural environment. All of these custom-built memorials provide permanent
+                    places for friends and family to visit for years to come.
+
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- 7 section -->
+    <div class="flex flex-row w-4/5 mx-auto my-8 gap-8">
+        <img src="./images/pedestals.jpg" alt="Private family estates">
+
+        <div class="py-8">
+            <h2 class="md:text-2xl sm:text-xl font-semibold italic">
+                Complimentary Remembrance Memorial™</h2>
+            <p class="py-2">We believe that every family should be able to create an ongoing tribute to the person they
+                loved. Select Dignity Memorial cemeteries offer a free cremation placement or you may choose a credit
+                toward another cemetery option. See our <a href=""><u>list of participating cemeteries</u></a> and ask
+                your provider for details.
+            </p>
+        </div>
+    </div>
+
+    </section>
+
+
+
+
+
+    <section class="py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Side - Guide Images -->
+                <img src="./images/form.png" alt="Planning guide" class="w-full">
+
+                <!-- Right Side - Form -->
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h2 class="text-3xl font-light text-gray-800 mb-6" style="font-family: 'Times New Roman', serif;">
+                        Plan a memorable cremation funeral
+                    </h2>
+
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Planning a personalized cremation funeral or memorial is an event unlike any other. We created a
+                        guide to help you understand all of your cremation options and how to plan a truly memorable
+                        event. <i>Understanding Cremation—A Complete Guide</i> is free, and it will help you start
+                        planning today. Then, when you are ready, a Dignity Memorial provider will be there to walk you
+                        through every step of the cremation process.
+                    </p>
+
+                    <p class="text-sm text-gray-500 mb-6 italic">
+                        * indicates a required field
+                    </p>
+
+                    <form class="space-y-4">
+                        <!-- First Name -->
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">
+                                FIRST NAME *
+                            </label>
+                            <input type="text" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent">
+                        </div>
+
+                        <!-- Last Name -->
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">
+                                LAST NAME *
+                            </label>
+                            <input type="text" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent">
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">
+                                EMAIL *
+                            </label>
+                            <input type="email" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent">
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">
+                                PHONE NUMBER *
+                            </label>
+                            <input type="tel" required placeholder="+1"
+                                class="w-full px-3 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent">
+                        </div>
+
+                        <!-- Zip Code -->
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">
+                                ZIP CODE *
+                            </label>
+                            <input type="text" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent">
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit"
+                            class="w-full bg-teal-500 text-white py-3 px-6 rounded-none hover:bg-teal-600 transition-colors duration-300 font-medium uppercase tracking-wider mt-6">
+                            GET A FREE GUIDE & QUOTE
+                        </button>
+                    </form>
+
+                    <!-- Privacy Notice -->
+                    <p class="text-xs text-gray-500 mt-6 leading-relaxed">
+                        We will never sell your information or use it for any purpose except official Dignity Memorial
+                        correspondence. See our <a href="#" class="text-teal-600 hover:underline">privacy policy</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <hr class="border-t-2 border-gray-300 my-8 mx-32">
+
+    <!-- Related Content -->
+    <section class="w-1/2 mx-auto px-4 py-8 my-8">
+
+        <h2 class="md:text-xl sm:text-sm italic">Related Content</h2>
+
+        <p class="py-2 pt-4"><a href=""><u>Talking About Funeral Arrangements</u></a></p>
+        <p class="py-2"><a href=""><u>VA Burial Benefits</u></a></p>
+        <p class="py-2"><a href=""><u>Funeral Pre-Planning Meeting</u></a></p>
+
+
+        <h3 class="pt-16 md:text-xl sm:text-sm font-normal">TAGS</h3>
+        <div class="flex gap-4 pt-6">
+            <!-- CEMETERY Button -->
+            <button
+                class="px-6 py-3 border-2 border-teal-400 bg-white text-gray-700 font-medium text-sm tracking-wide hover:bg-teal-50 transition-colors duration-200">
+                CEMETERY
+            </button>
+
+            <!-- CREMATION Button -->
+            <button
+                class="px-6 py-3 border-2 border-teal-400 bg-white text-gray-700 font-medium text-sm tracking-wide hover:bg-teal-50 transition-colors duration-200">
+                CREMATION
+            </button>
+
+            <!-- BURIAL Button -->
+            <button
+                class="px-6 py-3 border-2 border-teal-400 bg-white text-gray-700 font-medium text-sm tracking-wide hover:bg-teal-50 transition-colors duration-200">
+                BURIAL
+            </button>
+
+            <!-- MAKING PLANS Button -->
+            <button
+                class="px-6 py-3 border-2 border-teal-400 bg-white text-gray-700 font-medium text-sm tracking-wide hover:bg-teal-50 transition-colors duration-200">
+                MAKING PLANS
+            </button>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <!-- Logo Section -->
+            <div class="text-center mb-8">
+                <div class="flex items-center justify-center mb-4">
+                    <span class="text-2xl text-gray-700 italic mr-4">Every Detail Remembered</span>
+                    <div class="w-px h-8 bg-gray-400 mx-4"></div>
+                    <span class="text-2xl text-gray-700 font-bold">Dignity</span>
+                    <span class="text-2xl text-gray-700">™</span>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div
+                class="flex flex-wrap justify-center gap-8 text-sm text-gray-600 uppercase tracking-wider font-sans mb-8">
+                <a href="#" class="hover:text-gray-800">ABOUT US</a>
+                <a href="#" class="hover:text-gray-800">CONTACT US</a>
+                <a href="#" class="hover:text-gray-800">CAREERS</a>
+                <a href="#" class="hover:text-gray-800">PRIVACY POLICY</a>
+                <a href="#" class="hover:text-gray-800">TERMS OF SERVICE</a>
+                <a href="#" class="hover:text-gray-800">ACCESSIBILITY</a>
+                <a href="#" class="hover:text-gray-800">DO NOT CALL</a>
+                <a href="#" class="hover:text-gray-800">
+                    <svg class="w-4 h-4 inline" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 9 5.16-.74 9-4.45 9-9V7l-10-5z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Copyright Footer -->
+    <footer class="bg-gray-700 py-6">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-gray-300 text-sm mb-4">© 2025 SCI SHARED RESOURCES, LLC. ALL RIGHTS RESERVED</p>
+            <p class="text-gray-400 text-xs mb-2">
+                <a href="#" class="hover:text-gray-300">Do Not Sell or Share My Personal Information</a>
+            </p>
+            <p class="text-gray-400 text-xs leading-relaxed max-w-4xl mx-auto">
+                This site is provided as a service of SCI Shared Resources, LLC. The Dignity Memorial brand name is used
+                to identify a network of licensed funeral, cremation and cemetery providers that include affiliates of
+                Service Corporation International, 1929 Allen Parkway, Houston, Texas. With over 2,000 locations,
+                Dignity Memorial providers proudly serve over 375,000 families a year.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
