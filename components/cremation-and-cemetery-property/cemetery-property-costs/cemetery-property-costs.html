@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dignity Memorial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-serif text-gray-800">Dignity<sup class="text-sm">®</sup></h1>
+                    <span class="text-sm text-gray-600 ml-2">MEMORIAL</span>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <div class="relative group">
+                        <button id="planDropdownBtn"
+                            class="flex items-center space-x-1 text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors">
+                            <span class="text-sm font-medium tracking-wide">PLAN A FUNERAL OR CREMATION</span>
+                            <svg class="w-4 h-4 transition-transform duration-200" id="planDropdownArrow" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <!-- Dropdown Menu -->
+                        <div id="planDropdown"
+                            class="absolute top-full left-0 w-96 bg-white shadow-lg border border-gray-200 opacity-0 invisible transform translate-y-2 transition-all duration-200 z-50">
+                            <div class="p-8">
+                                <div class="grid grid-cols-2 gap-8">
+                                    <!-- Immediate Need Column -->
+                                    <div>
+                                        <h3 class="text-xl font-serif text-gray-800 mb-4">Immediate Need</h3>
+                                        <a href="#"
+                                            class="block text-teal-600 hover:text-teal-700 text-sm font-medium border-b border-teal-600 pb-1 mb-4 transition-colors">
+                                            Death has occurred or is near
+                                        </a>
+                                    </div>
+
+                                    <!-- Plan Ahead Column -->
+                                    <div>
+                                        <h3 class="text-xl font-serif text-gray-800 mb-4">Plan Ahead</h3>
+                                        <a href="#"
+                                            class="block text-teal-600 hover:text-teal-700 text-sm font-medium border-b border-teal-600 pb-1 mb-4 transition-colors">
+                                            Pre-plan a funeral or cremation
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#"
+                        class="text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors text-sm font-medium tracking-wide">
+                        FIND OBITUARIES AND SERVICES
+                    </a>
+
+                    <a href="#"
+                        class="text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors text-sm font-medium tracking-wide">
+                        FIND FUNERAL HOMES OR CEMETERIES
+                    </a>
+
+                    <div class="relative group">
+                        <button id="resourcesDropdownBtn"
+                            class="flex items-center space-x-1 text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors">
+                            <span class="text-sm font-medium tracking-wide">IDEAS AND RESOURCES</span>
+                            <svg class="w-4 h-4 transition-transform duration-200" id="resourcesDropdownArrow"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <!-- Resources Dropdown Menu -->
+                        <div id="resourcesDropdown"
+                            class="absolute top-full right-0 w-screen max-w-5xl bg-white shadow-lg border border-gray-200 opacity-0 invisible transform translate-y-2 transition-all duration-200 z-50">
+                            <div class="p-8">
+                                <div class="flex gap-8">
+                                    <!-- Left Column - Featured Content -->
+                                    <div class="w-1/3">
+                                        <div class="mb-6">
+                                            <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=300&h=200&fit=crop"
+                                                alt="Elderly couple on bench"
+                                                class="w-full h-32 object-cover rounded-lg mb-4">
+                                            <p class="text-xs text-gray-500 uppercase tracking-wide mb-2">FREE PRICING
+                                                GUIDE:</p>
+                                            <h3 class="text-lg font-serif text-gray-800 mb-3">Why pre-plan a funeral or
+                                                cremation?</h3>
+                                            <a href="#"
+                                                class="text-teal-600 hover:text-teal-700 text-sm font-medium">Learn
+                                                More</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Middle Column -->
+                                    <div class="w-1/3">
+                                        <div class="space-y-4">
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Prepaid
+                                                Funeral Plans</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Funeral
+                                                & Cremation Costs</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Cemetery
+                                                & Cremation Property</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Cremation</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Celebration
+                                                of Life</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Right Column -->
+                                    <div class="w-1/3">
+                                        <div class="space-y-4">
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Veterans
+                                                Burials & Funerals</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">When
+                                                Death Has Occurred</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Grief
+                                                & Sympathy</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Memorial
+                                                Services</a>
+                                        </div>
+
+                                        <div class="mt-8 pt-6 border-t border-gray-200">
+                                            <a href="#"
+                                                class="flex items-center text-teal-600 hover:text-teal-700 text-sm font-medium uppercase tracking-wide">
+                                                VIEW ALL RESOURCES
+                                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor"
+                                                    viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <button class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="bg-gray-50 border-b border-gray-200 py-3 px-8">
+        <div class="max-w-6xl mx-auto">
+            <ul class="flex items-center space-x-2 text-sm text-gray-600">
+                <li>
+                    <a href="#" class="hover:text-teal-600 transition duration-200">
+                        <span>HOME</span>
+                    </a>
+                </li>
+                <li class="flex items-center">
+                    <svg class="w-4 h-4 mx-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    <a href="#" class="hover:text-teal-600 transition duration-200">
+                        <span>Funeral & Cremation Pre-planning</span>
+                    </a>
+                </li>
+                <li class="flex items-center">
+                    <svg class="w-4 h-4 mx-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    <a href="#" class="hover:text-teal-600 transition duration-200">
+                        <span>Funeral & Cremation Costs</span>
+                    </a>
+                </li>
+                <li class="flex items-center">
+                    <svg class="w-4 h-4 mx-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    <span class="text-gray-800 font-medium">Cemetery Plot Cost & Prices</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-[500px] bg-cover bg-no-repeat" style="background-image: url('./images/hero.jpg');">
+        <!-- Overlay (optional, for darkening the image) -->
+        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+
+        <!-- Centered Text -->
+        <div
+            class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 w-3/5 mx-auto">
+            <h1 class="md:text-6xl sm:text-xl font-bold mb-4">Cemetery Property Costs</h1>
+        </div>
+
+    </section>
+
+
+
+    <div class="w-3/5 mx-auto mt-8 p-6 text-center">
+        <p>When making decisions about a final resting place, the cost of a burial plot is one of many factors to
+            consider. Other considerations might be proximity to other family members, personal preference, family,
+            religious or cultural traditions and availability in your area.</p>
+    </div>
+
+
+    <hr class="border-2 border-gray-500 my-16 mx-auto w-1/4">
+
+
+    <section class="w-1/2 mx-auto text-gray-700">
+        <p>When choosing cemetery property for someone else, you might also keep in mind that person’s personality and passions. Someone who loved to camp may have wanted a remote spot in a tree-filled cemetery. A passionate gardener may have wanted to be buried in an area filled with flowers. A veteran might have appreciated a place near fellow service members.</p>
+        <p class="py-8">Traditional in-ground cemetery plots are commonly thought of when it comes to burial options, but there are other types of properties for both cremations and casket burials that fall within a variety of price points. Dignity Memorial® professionals can assist you in choosing cemetery property that meets your tastes, preferences and budget.</p>
+
+        <img src="./images/cost_of_burials_under_surface.jpg" alt="Cost of burials under surface">
+
+
+        <h1 class="md:text-4xl sm:text-xl pt-16">Costs of traditional burial options</h1>
+        <p class="py-8">People who choose traditional casketed burials have myriad opportunities to create a place of remembrance. Traditional burial plot options can vary in price depending on what you choose and the level of customization you prefer. In-ground burial plots and lawn crypts come in single and double depths and can be memorialized with headstones or markers. A mausoleum allows a casket to be entombed above ground. Families can also consider custom, private aboveground or in-ground options.</p>
+
+
+        <ul class="list-disc mx-8">
+            <li><b>Custom-built memorials</b> are personalized tributes in granite, bronze or marble. They include statuary, monuments, benches and other types of memorials, and they are typically inscribed with names, dates, verses, mottos and more. A custom-built memorial can be placed near the site where someone is buried or can be a permanent reminder and a place for friends and family to visit and remember someone who was buried elsewhere. The cost of a custom-built memorial depends on the size, material and level of customization chosen.</li>
+            <li class="py-2"><b>Private mausoleums</b> are exclusive, custom-built, aboveground burial places usually for a prominent individual, couple or family. The person or family building the mausoleum works with a designer to customize the architecture of the structure as well as features such as bronze doors or stained-glass windows.</li>
+            <li><b>A community mausoleum</b> can hold hundreds or even thousands of crypts for aboveground casket burial. Typically constructed in granite, these are sometimes very large and stately structures. A garden mausoleum has only outdoor crypts. An indoor mausoleum is a climate-controlled building that's comfortable for visitors even in very hot or very cold weather. Depending on the mausoleum and cemetery property, options can include single crypts, side-by-side crypts and companion crypts. These can be more affordable options and can still be personalized depending on your selection.</li>
+            <li class="py-2"><b>Individual burial plots</b> for in-ground casket burial are available in single depth or double depth options, depending on the cemetery. Burial plots can range in cost depending on the option you choose and its placement in the cemetery.</li>
+            <li><b>Private estates</b> can include gated estates and hedge estates for in-ground casket burial. A gated estate is like a mini cemetery within a cemetery. Typically more than one person is buried there, and the property is kept private with a wall or fence and a gate. Similarly, a hedge estate typically has space for more than one burial; hedgerows indicate the perimeter of the private area.</li>
+            <li class="py-2"><b>Lawn crypts</b> are areas where outer burial containers are pre-installed. Lawn crypts come in single-depth and double-depth options. Not all cemeteries have lawn crypts available, so if you're interested in this option, be sure to ask.</li>
+        </ul>
+
+
+        <p>Cemetery plot prices can vary widely depending on the property type and the cemetery chosen—and they are, of course, subject to inflation over time. When you plan a funeral ahead of time, you lock in the burial plot cost, making an objective decision when it comes to affordability and minimizing the financial burden to your family. Dignity Memorial providers can assist you with prearrangement options with low monthly payments.</p>
+
+
+
+        <img class="py-8" src="./images/cemetery_plot_prices.jpg" alt="Cemetery Plot Prices">
+
+
+
+
+        <h1 class="md:text-4xl sm:text-xl pt-16">Costs of cremation cemetery options</h1>
+        <p class="py-8">There are unique and beautiful ways of varying costs to create a lasting legacy for those choosing cremation. Whether you want to bury an urn in a cemetery garden, place it in a columbarium or mausoleum niche, or choose another inurnment option, such as a bench or a boulder, we'll help you find the final resting place best suited to your preference and budget.</p>
+
+        <ul class="list-disc mx-8">
+            <li>A <a href=""><u>columbarium</u></a> is a room or structure designed to house cremated remains. Columbaria are permanent memorials with banks of cremation niches (similar to cubbyholes but with secure fronts). A columbarium can be large or small, private or public. Some columbaria have glass-front niches, which allow you to see the cremation urns and personal artifacts displayed with them. Other columbaria have granite-front niches that can be engraved or memorialized with plaques. Some columbaria have both.</li>
+            <li><a href=""><u>Cremation gardens</u></a> are sections of a cemetery set aside for cremated remains. Some cremation gardens allow for in-ground burial of urns. Others allow cremated remains to be scattered there. Some include benches, boulders, statues and more that are designed to hold cremation urns.</li>
+        </ul>
+
+        <p class="pt-4">As with more traditional burial options, cemetery plot costs can vary based on the type of property you choose. Your local Dignity Memorial provider can walk you through the cremation cemetery options in your area.</p>
+
+
+
+
+        <h1 class="md:text-4xl sm:text-xl pt-16">Is there help to pay for cemetery plot costs?</h1>
+        <p class="pt-4">Planning a funeral and paying for burial costs in a time of grief and loss can be very stressful. You may wonder if there are programs that help pay for funeral expenses and the costs that come with purchasing cemetery property.</p>
+        <p class="py-2">Life insurance can help, but it may not cover all the expenses. You'll need to check your or your loved one's policy for exact coverage.</p>
+        <p>Social Security and <a href=""><u>Veterans Administration (VA) burial benefits</u></a> are also available but may be limited. They usually don't pay enough to cover the full cost of the preferred funeral service and burial plot. Social Security may offer a one-time death benefit to a spouse in certain situations. The VA will pay up to $700 as an interment allowance, and that amount may be adjusted annually.</p>
+        <p class="pt-2">To find out which Social Security benefits you or your loved one qualify for, call 800-772-1213 or go to <a href="www.ssa.gov"><u>www.ssa.gov</u></a>. For veteran benefits, contact the VA at 800-827-1000 or go to <a href="www.cem.va.gov"><u>www.cem.va.gov</u></a>.</p>
+
+
+    </section>
+
+
+
+
+
+    <section class="py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Side - Guide Images -->
+                <img src="./images/form.jpg" alt="Planning guide" class="w-full">
+
+                <!-- Right Side - Form -->
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h2 class="text-3xl font-light text-gray-800 mb-6" style="font-family: 'Times New Roman', serif;">
+                        Create a lasting legacy
+                    </h2>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Many people don't realize the significance of choosing a final resting place. It is an important
+                        step in creating a family legacy, establishing a place of remembrance for future generations and
+                        paying tribute to a special life. Your Dignity Memorial professionals are here to help.
+                    </p>
+
+                    <p class="py-4 text-gray-600">Get your free Buyer's Guide to Cemetery Property today. </p>
+
+                    <p class="text-sm text-gray-500 mb-6 italic">
+                        * indicates a required field
+                    </p>
+
+                    <form class="space-y-4">
+                        <!-- First Name -->
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">
+                                FIRST NAME *
+                            </label>
+                            <input type="text" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent">
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">
+                                EMAIL *
+                            </label>
+                            <input type="email" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent">
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit"
+                            class="w-full bg-teal-500 text-white py-3 px-6 rounded-none hover:bg-teal-600 transition-colors duration-300 font-medium uppercase tracking-wider mt-6">
+                            DOWNLOAD GUIDE
+                        </button>
+                    </form>
+
+                    <!-- Privacy Notice -->
+                    <p class="text-xs text-gray-500 mt-6 leading-relaxed">
+                        We will never sell your information or use it for any purpose except official Dignity Memorial
+                        correspondence. See our <a href="#" class="text-teal-600 hover:underline">privacy policy</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    
+    <hr class="border-t-2 border-gray-300 my-8 mx-32">
+
+    <!-- Related Content -->
+    <section class="w-1/2 mx-auto px-4 py-8 my-8">
+
+        <h2 class="md:text-xl sm:text-sm italic">Related Content</h2>
+
+        <p class="py-2 pt-4"><a href=""><u>The Best Gift</u></a></p>
+        <p class="py-2"><a href=""><u>Types of Cemetery Options</u></a></p>
+        <p class="py-2"><a href=""><u>VA Burial Benefits</u></a></p>
+
+
+        <h3 class="pt-16 md:text-xl sm:text-sm font-normal">TAGS</h3>
+        <div class="flex gap-4 pt-6">
+            <!-- CEMETERY Button -->
+            <button
+                class="px-6 py-3 border-2 border-teal-400 bg-white text-gray-700 font-medium text-sm tracking-wide hover:bg-teal-50 transition-colors duration-200">
+                COST
+            </button>
+
+            <!-- CREMATION Button -->
+            <button
+                class="px-6 py-3 border-2 border-teal-400 bg-white text-gray-700 font-medium text-sm tracking-wide hover:bg-teal-50 transition-colors duration-200">
+                CEMETERY
+            </button>
+
+             <!-- CREMATION Button -->
+            <button
+                class="px-6 py-3 border-2 border-teal-400 bg-white text-gray-700 font-medium text-sm tracking-wide hover:bg-teal-50 transition-colors duration-200">
+                A DEATH HAS OCCURRED OR IS NEAR
+            </button>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <!-- Logo Section -->
+            <div class="text-center mb-8">
+                <div class="flex items-center justify-center mb-4">
+                    <span class="text-2xl text-gray-700 italic mr-4">Every Detail Remembered</span>
+                    <div class="w-px h-8 bg-gray-400 mx-4"></div>
+                    <span class="text-2xl text-gray-700 font-bold">Dignity</span>
+                    <span class="text-2xl text-gray-700">™</span>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div
+                class="flex flex-wrap justify-center gap-8 text-sm text-gray-600 uppercase tracking-wider font-sans mb-8">
+                <a href="#" class="hover:text-gray-800">ABOUT US</a>
+                <a href="#" class="hover:text-gray-800">CONTACT US</a>
+                <a href="#" class="hover:text-gray-800">CAREERS</a>
+                <a href="#" class="hover:text-gray-800">PRIVACY POLICY</a>
+                <a href="#" class="hover:text-gray-800">TERMS OF SERVICE</a>
+                <a href="#" class="hover:text-gray-800">ACCESSIBILITY</a>
+                <a href="#" class="hover:text-gray-800">DO NOT CALL</a>
+                <a href="#" class="hover:text-gray-800">
+                    <svg class="w-4 h-4 inline" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 9 5.16-.74 9-4.45 9-9V7l-10-5z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Copyright Footer -->
+    <footer class="bg-gray-700 py-6">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-gray-300 text-sm mb-4">© 2025 SCI SHARED RESOURCES, LLC. ALL RIGHTS RESERVED</p>
+            <p class="text-gray-400 text-xs mb-2">
+                <a href="#" class="hover:text-gray-300">Do Not Sell or Share My Personal Information</a>
+            </p>
+            <p class="text-gray-400 text-xs leading-relaxed max-w-4xl mx-auto">
+                This site is provided as a service of SCI Shared Resources, LLC. The Dignity Memorial brand name is used
+                to identify a network of licensed funeral, cremation and cemetery providers that include affiliates of
+                Service Corporation International, 1929 Allen Parkway, Houston, Texas. With over 2,000 locations,
+                Dignity Memorial providers proudly serve over 375,000 families a year.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
