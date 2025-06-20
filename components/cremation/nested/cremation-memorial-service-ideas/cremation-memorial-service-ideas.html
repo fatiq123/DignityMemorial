@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dignity Memorial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-serif text-gray-800">Dignity<sup class="text-sm">®</sup></h1>
+                    <span class="text-sm text-gray-600 ml-2">MEMORIAL</span>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <div class="relative group">
+                        <button id="planDropdownBtn"
+                            class="flex items-center space-x-1 text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors">
+                            <span class="text-sm font-medium tracking-wide">PLAN A FUNERAL OR CREMATION</span>
+                            <svg class="w-4 h-4 transition-transform duration-200" id="planDropdownArrow" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <!-- Dropdown Menu -->
+                        <div id="planDropdown"
+                            class="absolute top-full left-0 w-96 bg-white shadow-lg border border-gray-200 opacity-0 invisible transform translate-y-2 transition-all duration-200 z-50">
+                            <div class="p-8">
+                                <div class="grid grid-cols-2 gap-8">
+                                    <!-- Immediate Need Column -->
+                                    <div>
+                                        <h3 class="text-xl font-serif text-gray-800 mb-4">Immediate Need</h3>
+                                        <a href="#"
+                                            class="block text-teal-600 hover:text-teal-700 text-sm font-medium border-b border-teal-600 pb-1 mb-4 transition-colors">
+                                            Death has occurred or is near
+                                        </a>
+                                    </div>
+
+                                    <!-- Plan Ahead Column -->
+                                    <div>
+                                        <h3 class="text-xl font-serif text-gray-800 mb-4">Plan Ahead</h3>
+                                        <a href="#"
+                                            class="block text-teal-600 hover:text-teal-700 text-sm font-medium border-b border-teal-600 pb-1 mb-4 transition-colors">
+                                            Pre-plan a funeral or cremation
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#"
+                        class="text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors text-sm font-medium tracking-wide">
+                        FIND OBITUARIES AND SERVICES
+                    </a>
+
+                    <a href="#"
+                        class="text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors text-sm font-medium tracking-wide">
+                        FIND FUNERAL HOMES OR CEMETERIES
+                    </a>
+
+                    <div class="relative group">
+                        <button id="resourcesDropdownBtn"
+                            class="flex items-center space-x-1 text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors">
+                            <span class="text-sm font-medium tracking-wide">IDEAS AND RESOURCES</span>
+                            <svg class="w-4 h-4 transition-transform duration-200" id="resourcesDropdownArrow"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <!-- Resources Dropdown Menu -->
+                        <div id="resourcesDropdown"
+                            class="absolute top-full right-0 w-screen max-w-5xl bg-white shadow-lg border border-gray-200 opacity-0 invisible transform translate-y-2 transition-all duration-200 z-50">
+                            <div class="p-8">
+                                <div class="flex gap-8">
+                                    <!-- Left Column - Featured Content -->
+                                    <div class="w-1/3">
+                                        <div class="mb-6">
+                                            <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=300&h=200&fit=crop"
+                                                alt="Elderly couple on bench"
+                                                class="w-full h-32 object-cover rounded-lg mb-4">
+                                            <p class="text-xs text-gray-500 uppercase tracking-wide mb-2">FREE PRICING
+                                                GUIDE:</p>
+                                            <h3 class="text-lg font-serif text-gray-800 mb-3">Why pre-plan a funeral or
+                                                cremation?</h3>
+                                            <a href="#"
+                                                class="text-teal-600 hover:text-teal-700 text-sm font-medium">Learn
+                                                More</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Middle Column -->
+                                    <div class="w-1/3">
+                                        <div class="space-y-4">
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Prepaid
+                                                Funeral Plans</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Funeral
+                                                & Cremation Costs</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Cemetery
+                                                & Cremation Property</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Cremation</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Celebration
+                                                of Life</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Right Column -->
+                                    <div class="w-1/3">
+                                        <div class="space-y-4">
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Veterans
+                                                Burials & Funerals</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">When
+                                                Death Has Occurred</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Grief
+                                                & Sympathy</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Memorial
+                                                Services</a>
+                                        </div>
+
+                                        <div class="mt-8 pt-6 border-t border-gray-200">
+                                            <a href="#"
+                                                class="flex items-center text-teal-600 hover:text-teal-700 text-sm font-medium uppercase tracking-wide">
+                                                VIEW ALL RESOURCES
+                                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor"
+                                                    viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <button class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="bg-gray-50 border-b border-gray-200 py-3 px-8">
+        <div class="max-w-6xl mx-auto">
+            <ul class="flex items-center space-x-2 text-sm text-gray-600">
+                <li>
+                    <a href="#" class="hover:text-teal-600 transition duration-200">
+                        <span>HOME</span>
+                    </a>
+                </li>
+                <li class="flex items-center">
+                    <svg class="w-4 h-4 mx-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    <a href="#" class="hover:text-teal-600 transition duration-200">
+                        <span>CREMATION</span>
+                    </a>
+                </li>
+                <li class="flex items-center">
+                    <svg class="w-4 h-4 mx-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    <span class="text-gray-800 font-medium">PLANNING A CREMATION MEMORIAL</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-[500px] bg-cover bg-no-repeat" style="background-image: url('./images/hero.jpg');">
+        <!-- Overlay (optional, for darkening the image) -->
+        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+
+        <!-- Centered Text -->
+        <div
+            class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 w-3/5 mx-auto">
+            <h1 class="md:text-6xl sm:text-xl font-bold mb-4">Planning a Cremation Memorial</h1>
+        </div>
+
+    </section>
+
+
+
+
+    <div class="w-3/5 mx-auto mt-16 text-center text-gray-700">
+        <p>A memorial service is a way to honor and remember a person's life. Though most people are familiar with
+            traditional funeral services, they may not understand all of the many options available when choosing
+            cremation or the important aspects to consider when planning a cremation funeral. A cremation funeral
+            service can include many of the same elements as a traditional funeral: flowers, music, readings, even a
+            viewing.</p>
+    </div>
+
+
+
+    <section class="w-1/2 mx-auto py-8 text-gray-700">
+
+        <p class="pt-8">If you have <a href=""><u>an immediate need</u></a> to <b>plan a cremation for a loved one</b>,
+            reach out to your local Dignity Memorial® provider. A professional planner or funeral celebrant can answer
+            all your questions about cremation and cremation memorials and help you <b>design a one-of-a-kind
+                service</b> for your loved one. If you're <a href=""><u>planning ahead</u></a>, here are some things to
+            think about.</p>
+
+
+
+        <h1 class="md:text-4xl sm:text-xl py-8">When to hold a cremation memorial service</h1>
+        <p>There isn't a “right” time for a memorial service, and a cremation funeral or celebration of life can be held
+            before or after the cremation itself.</p>
+
+        <p class="py-4">When a funeral is held prior to cremation, the service can include a viewing, as with a
+            traditional funeral. A viewing lets friends and family say a final goodbye. Holding a viewing before
+            cremation will likely require embalming and the purchase or rental of a casket, which will impact the cost
+            of arrangements.</p>
+
+        <p>When a funeral is held after cremation, ashes are usually present at the service in a cremation urn or other
+            container. A family will often surround the urn with cherished photos and important keepsakes of the person
+            being honored to create a focal point that helps guests reflect and celebrate.</p>
+
+
+        <img class="py-4" src="./images/cremation_memorial_service.jpg" alt="Cremation Memorial Service">
+
+
+
+        <h1 class="md:text-4xl sm:text-xl py-8">Ideas for a cremation memorial service</h1>
+        <p>Today's cremation funerals can be <b>religious ceremonies or lively celebrations</b> with themed decor,
+            favorite foods and live music. Either way, they should <b>reflect the personality and passions</b> of the
+            loved one being remembered. Here are <a href=""><u>a few ideas</u></a>.</p>
+
+        <p class="py-4"><b>For the traditionalist</b>: Plan <b>a visitation and funeral service for friends and
+                family</b> at the funeral home prior to cremation. Follow up a few days later with a <b> smaller
+                committal service at the mausoleum</b> where your loved one's <a href=""><u>ashes will be
+                    memorialized</u></a>.</p>
+
+        <p>For the <b>outdoors lover</b>: Host a <b>post-cremation lakeside party</b>. Ask guests to dress casually and
+            gather near the water for an afternoon of remembrance. Pallbearers can bring your loved one's urn to the
+            gathering in the seat of a kayak. Guests can share stories of shared adventures.</p>
+
+        <p><b>For the cause advocate</b>: Organize a <b>memorial fundraiser</b> after cremation to honor the legacy of
+            your loved one and raise money and awareness for a cause near to their heart. Options include a walk-a-thon,
+            auction or baked goods sale; donate funds raised to the cause of choice.</p>
+
+
+        <img class="py-4" src="./images/ideas_for_cremation_memorial_service.jpg" alt="Cremation Memorial Service">
+
+
+
+        <p class="py-4"><b>For the high flyer</b>: There's nothing in the Federal Aviation Regulations to prohibit
+            <b>scattering ashes from an airplane</b>—just don't toss out the container. Rent a plane and have friends
+            and family gather either at your property or that of someone who's given you permission to watch and
+            celebrate.
+        </p>
+
+        <p><b>For the fan of simplicity</b>: Even someone who liked to keep things simple can be honored with <b>a
+                moment of reverent reflection</b>. If you choose simple cremation for yourself or your loved one, your
+            Dignity Memorial provider can arrange a quiet time for a few family members to gather together to pick up a
+            loved one's ashes.</p>
+
+        <p>There are <b>no right or wrong ways</b> to celebrate a life. Even <b>simple details and personal touches</b>
+            make for a deeply meaningful memorial service. We can help you find inspiration and then help you decide how
+            far to take it-just <a href=""><u>download our memorial inspiration guide</u></a> to get started.</p>
+
+
+        <img class="py-4" src="./images/remembrance.jpg" alt="Cremation Memorial Service">
+
+
+
+
+
+        <h1 class="md:text-4xl sm:text-xl py-8">Elements of a cremation memorial</h1>
+
+        <p>A cremation memorial can include all of the same elements as a traditional funeral or celebration of life.
+        </p>
+
+
+        <p><b>Theme</b>: A cremation funeral can be a no-frills event to match a pared-down personality or an
+            extravagant affair to honor a passionate extrovert. What's important is that the service uniquely reflects
+            the person's life. <b>A funeral theme typically draws on a hobby or signature style</b> . Was she a shoe
+            lover? Was he a golf pro? Did she have a reputation as the city's best cookie baker? Did the whole town
+            count on him to play Santa Claus for the kids? We've created funerals for world travelers and bookworms,
+            equestrians and poets. </p>
+
+        <p class="py-4"><b>Event details</b>: A cremation funeral can include readings of eulogies, religious verses,
+            passages from literature and more. It can include a group sing-along, a conga line or an activity like
+            hiking a favorite trail. Will it include a breakfast buffet? A cake-and-coffee reception? An outdoor
+            barbecue? A formal dinner? A truly elaborate event can include fireworks, but <b>personalization doesn't
+                have to be over the top</b>. You can honor a loved one with something as simple as a poem.</p>
+
+        <p><b>Location</b>: Programming for the event influences where you hold the cremation funeral. <b>The funeral
+                home is a convenient choice</b>, and most funeral homes today have space for catered receptions. In
+            fact, some funeral homes have spaces that are as fine as a hotel ballroom or as sophisticated as a wine bar.
+            A cremation funeral could also be held at <b>a church, the family's home</b> or someplace outdoors (your
+            Dignity Memorial provider will know about necessary permitting).</p>
+
+        <p class="pt-4"><a href=""><u><b>Keepsakes</b></u></a>: Many families want to give funeral attendees a token to
+            represent the person being remembered. A bookmark or a recipe card, custom golf balls or key chains, a
+            person's favorite candy or even a piece from a collection are all wonderful ways to let someone know you are
+            touched that they attended the funeral and allow them a little something by which to remember their friend
+            or family member.</p>
+
+
+        <img class="py-4" src="./images/elements_of_cremation_memorial.jpg" alt="Cremation Memorial Service">
+
+
+
+        <h1 class="md:text-4xl sm:text-xl py-8">What to do with a loved one's ashes</h1>
+
+        <p>Cremation has the benefit of more options for memorialization than traditional burial. You may even be
+            surprised by all the choices.</p>
+
+
+        <p><a href=""><u>Cemetery options</u></a> include cremation <b>burial, niches and scattering gardens</b> (the
+            choices vary from cemetery to cemetery), as well as pedestals, benches and statuary that hold ashes. Even
+            families who opt to keep a loved one's ashes at home or scatter them someplace besides a cemetery may choose
+            a marker at a cemetery so future generations have a place to visit and remember. Some Dignity Memorial
+            providers offer families who choose cremation <a href=""><u>a complimentary cremation placement</u></a>.</p>
+
+        <p class="py-4">If a site in a cemetery doesn't appeal to your family, there are still plenty of ways to
+            memorialize a loved one. Think about the activities or places that were significant to your person; these
+            can provide <a href=""><u><b>inspiration for scattering</b></u></a>. Consider planting a tree as a memorial
+            or placing an engraved boulder at a special spot. You might <b>purchase a bench or paver for a sidewalk</b>.
+            Let your loved one's life inspire you.</p>
+
+        <p>And finally, in addition to those options, <b>custom cremation jewelry</b> or other mementos, such as glass
+            art, vinyl records, synthesized diamonds or even a tattoo, can turn a bit of ashes into a timeless keepsake.
+        </p>
+
+        <p class="pt-4">No matter what choice your family makes, <b>there's an opportunity to honor the life of your
+                loved one</b> with a ceremony memorializing the event. Even families who choose a cremation without a
+            service might opt to host a small gathering at home once the ashes are returned or hold a scattering
+            ceremony with a few close friends.</p>
+
+    </section>
+
+
+
+    <section class="flex flex-row items-center bg-gray-100 py-12 px-8 w-3/4  mx-auto">
+        <!-- Left side - Image -->
+        <div class="w-1/2 pr-8 flex justify-center">
+            <img class="w-3/4 max-w-md" src="./images/form.png" alt="Cremation Guide Brochures">
+        </div>
+
+        <!-- Right side - Content -->
+        <div class="w-1/2 pl-8">
+            <h2 class="text-3xl md:text-4xl font-light text-gray-800 leading-relaxed mb-8">
+                When you choose cremation, you also have options for a personalized cremation funeral or memorial. A
+                <em class="italic text-amber-700">Guide for Families Choosing Cremation</em>
+                will help you understand your choices.
+            </h2>
+
+            <button
+                class="bg-teal-400 hover:bg-teal-500 text-white font-semibold py-4 px-8 rounded transition-colors duration-200 uppercase tracking-wide text-sm">
+                DOWNLOAD NOW
+            </button>
+        </div>
+    </section>
+
+
+    <hr class="w-1/4 border-2 border-gray-300 mx-auto my-16">
+
+    <!-- Related Content -->
+    <section class="w-1/2 mx-auto px-4 py-8 my-8">
+
+        <h2 class="md:text-xl sm:text-sm italic">Related Content</h2>
+
+        <p class="py-2 pt-4"><a href=""><u>Types of Cemetery Options</u></a></p>
+        <p class="py-2"><a href=""><u>Talking About Funeral Arrangements</u></a></p>
+        <p class="py-2"><a href=""><u>Cost of a Cremation Funeral</u></a></p>
+
+
+        <h3 class="pt-16 md:text-xl sm:text-sm font-normal">TAGS</h3>
+        <div class="flex flex-wrap gap-4 pt-6">
+            <!-- CEMETERY Button -->
+            <button
+                class="px-6 py-3 border-2 border-teal-400 bg-white text-gray-700 font-medium text-sm tracking-wide hover:bg-teal-50 transition-colors duration-200">
+                CREMATION
+            </button>
+
+            <!-- CREMATION Button -->
+            <button
+                class="px-6 py-3 border-2 border-teal-400 bg-white text-gray-700 font-medium text-sm tracking-wide hover:bg-teal-50 transition-colors duration-200">
+                CELEBRATION OF LIFE IDEAS
+            </button>
+
+            <!-- CREMATION Button -->
+            <button
+                class="px-6 py-3 border-2 border-teal-400 bg-white text-gray-700 font-medium text-sm tracking-wide hover:bg-teal-50 transition-colors duration-200">
+                FUNERAL IDEAS
+            </button>
+
+             <button
+                class="px-6 py-3 border-2 border-teal-400 bg-white text-gray-700 font-medium text-sm tracking-wide hover:bg-teal-50 transition-colors duration-200">
+                NEXT OF KIN
+            </button>
+
+
+             <button
+                class="px-6 py-3 border-2 border-teal-400 bg-white text-gray-700 font-medium text-sm tracking-wide hover:bg-teal-50 transition-colors duration-200">
+                IDEAS FOR PLANNERS
+            </button>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <!-- Logo Section -->
+            <div class="text-center mb-8">
+                <div class="flex items-center justify-center mb-4">
+                    <span class="text-2xl text-gray-700 italic mr-4">Every Detail Remembered</span>
+                    <div class="w-px h-8 bg-gray-400 mx-4"></div>
+                    <span class="text-2xl text-gray-700 font-bold">Dignity</span>
+                    <span class="text-2xl text-gray-700">™</span>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div
+                class="flex flex-wrap justify-center gap-8 text-sm text-gray-600 uppercase tracking-wider font-sans mb-8">
+                <a href="#" class="hover:text-gray-800">ABOUT US</a>
+                <a href="#" class="hover:text-gray-800">CONTACT US</a>
+                <a href="#" class="hover:text-gray-800">CAREERS</a>
+                <a href="#" class="hover:text-gray-800">PRIVACY POLICY</a>
+                <a href="#" class="hover:text-gray-800">TERMS OF SERVICE</a>
+                <a href="#" class="hover:text-gray-800">ACCESSIBILITY</a>
+                <a href="#" class="hover:text-gray-800">DO NOT CALL</a>
+                <a href="#" class="hover:text-gray-800">
+                    <svg class="w-4 h-4 inline" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 9 5.16-.74 9-4.45 9-9V7l-10-5z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Copyright Footer -->
+    <footer class="bg-gray-700 py-6">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-gray-300 text-sm mb-4">© 2025 SCI SHARED RESOURCES, LLC. ALL RIGHTS RESERVED</p>
+            <p class="text-gray-400 text-xs mb-2">
+                <a href="#" class="hover:text-gray-300">Do Not Sell or Share My Personal Information</a>
+            </p>
+            <p class="text-gray-400 text-xs leading-relaxed max-w-4xl mx-auto">
+                This site is provided as a service of SCI Shared Resources, LLC. The Dignity Memorial brand name is used
+                to identify a network of licensed funeral, cremation and cemetery providers that include affiliates of
+                Service Corporation International, 1929 Allen Parkway, Houston, Texas. With over 2,000 locations,
+                Dignity Memorial providers proudly serve over 375,000 families a year.
+            </p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
