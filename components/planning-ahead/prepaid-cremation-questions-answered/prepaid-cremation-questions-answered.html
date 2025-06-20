@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dignity Memorial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-serif text-gray-800">Dignity<sup class="text-sm">®</sup></h1>
+                    <span class="text-sm text-gray-600 ml-2">MEMORIAL</span>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <div class="relative group">
+                        <button id="planDropdownBtn"
+                            class="flex items-center space-x-1 text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors">
+                            <span class="text-sm font-medium tracking-wide">PLAN A FUNERAL OR CREMATION</span>
+                            <svg class="w-4 h-4 transition-transform duration-200" id="planDropdownArrow" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <!-- Dropdown Menu -->
+                        <div id="planDropdown"
+                            class="absolute top-full left-0 w-96 bg-white shadow-lg border border-gray-200 opacity-0 invisible transform translate-y-2 transition-all duration-200 z-50">
+                            <div class="p-8">
+                                <div class="grid grid-cols-2 gap-8">
+                                    <!-- Immediate Need Column -->
+                                    <div>
+                                        <h3 class="text-xl font-serif text-gray-800 mb-4">Immediate Need</h3>
+                                        <a href="#"
+                                            class="block text-teal-600 hover:text-teal-700 text-sm font-medium border-b border-teal-600 pb-1 mb-4 transition-colors">
+                                            Death has occurred or is near
+                                        </a>
+                                    </div>
+
+                                    <!-- Plan Ahead Column -->
+                                    <div>
+                                        <h3 class="text-xl font-serif text-gray-800 mb-4">Plan Ahead</h3>
+                                        <a href="#"
+                                            class="block text-teal-600 hover:text-teal-700 text-sm font-medium border-b border-teal-600 pb-1 mb-4 transition-colors">
+                                            Pre-plan a funeral or cremation
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#"
+                        class="text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors text-sm font-medium tracking-wide">
+                        FIND OBITUARIES AND SERVICES
+                    </a>
+
+                    <a href="#"
+                        class="text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors text-sm font-medium tracking-wide">
+                        FIND FUNERAL HOMES OR CEMETERIES
+                    </a>
+
+                    <div class="relative group">
+                        <button id="resourcesDropdownBtn"
+                            class="flex items-center space-x-1 text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors">
+                            <span class="text-sm font-medium tracking-wide">IDEAS AND RESOURCES</span>
+                            <svg class="w-4 h-4 transition-transform duration-200" id="resourcesDropdownArrow"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <!-- Resources Dropdown Menu -->
+                        <div id="resourcesDropdown"
+                            class="absolute top-full right-0 w-screen max-w-5xl bg-white shadow-lg border border-gray-200 opacity-0 invisible transform translate-y-2 transition-all duration-200 z-50">
+                            <div class="p-8">
+                                <div class="flex gap-8">
+                                    <!-- Left Column - Featured Content -->
+                                    <div class="w-1/3">
+                                        <div class="mb-6">
+                                            <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=300&h=200&fit=crop"
+                                                alt="Elderly couple on bench"
+                                                class="w-full h-32 object-cover rounded-lg mb-4">
+                                            <p class="text-xs text-gray-500 uppercase tracking-wide mb-2">FREE PRICING
+                                                GUIDE:</p>
+                                            <h3 class="text-lg font-serif text-gray-800 mb-3">Why pre-plan a funeral or
+                                                cremation?</h3>
+                                            <a href="#"
+                                                class="text-teal-600 hover:text-teal-700 text-sm font-medium">Learn
+                                                More</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Middle Column -->
+                                    <div class="w-1/3">
+                                        <div class="space-y-4">
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Prepaid
+                                                Funeral Plans</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Funeral
+                                                & Cremation Costs</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Cemetery
+                                                & Cremation Property</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Cremation</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Celebration
+                                                of Life</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Right Column -->
+                                    <div class="w-1/3">
+                                        <div class="space-y-4">
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Veterans
+                                                Burials & Funerals</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">When
+                                                Death Has Occurred</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Grief
+                                                & Sympathy</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Memorial
+                                                Services</a>
+                                        </div>
+
+                                        <div class="mt-8 pt-6 border-t border-gray-200">
+                                            <a href="#"
+                                                class="flex items-center text-teal-600 hover:text-teal-700 text-sm font-medium uppercase tracking-wide">
+                                                VIEW ALL RESOURCES
+                                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor"
+                                                    viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <button class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="bg-gray-50 border-b border-gray-200 py-3 px-8">
+        <div class="max-w-6xl mx-auto">
+            <ul class="flex items-center space-x-2 text-sm text-gray-600">
+                <li>
+                    <a href="#" class="hover:text-teal-600 transition duration-200">
+                        <span>HOME</span>
+                    </a>
+                </li>
+                <li class="flex items-center">
+                    <svg class="w-4 h-4 mx-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    <a href="#" class="hover:text-teal-600 transition duration-200">
+                        <span>CREMATION</span>
+                    </a>
+                </li>
+                <li class="flex items-center">
+                    <svg class="w-4 h-4 mx-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    <span class="text-gray-800 font-medium">PREPAID CREMATIONS</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-[500px] bg-cover bg-no-repeat" style="background-image: url('./images/hero.jpg');">
+        <!-- Overlay (optional, for darkening the image) -->
+        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+
+        <!-- Centered Text -->
+        <div
+            class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 w-3/5 mx-auto">
+            <h1 class="md:text-6xl sm:text-xl font-bold mb-4">Prepaid Cremation Questions & Answers</h1>
+        </div>
+
+    </section>
+
+
+
+
+    <div class="w-3/5 mx-auto mt-8 p-6 text-center text-gray-700">
+        <p>Prepaid cremation provides peace of mind. Knowing your family won't be burdened with financial strain or the
+            stress of difficult decisions during an already emotional time can be a source of comfort for you and the
+            ones you love.</p>
+    </div>
+
+
+    <hr class="border-2 border-gray-500 my-16 mx-auto w-1/4">
+
+
+
+    <section class="w-1/2 mx-auto bg-green-100 text-center text-gray-700">
+        <p class="py-8 px-8 mx-auto">In today's uncertain environment, many families are finding comfort in planning
+            final arrangements in advance and easing the financial and emotional burdens on loved ones. Please let us
+            know if you have any questions.</p>
+    </section>
+
+
+    <section class="w-1/2 mx-auto py-16 text-gray-700">
+        <p>As always, we are committed to honoring your loved one in any way possible. And we will ensure you and your
+            guests feel safe conducting services with us. Please contact us if you have questions.</p>
+        <p class="py-2">People often have questions about prepaying for a cremation or a cremation memorial, and we're here to help.
+        </p>
+        <p>In this article, you will learn:</p>
+
+        <ul class="list-disc px-8 py-2">
+            <li><a href=""><u>Can you prepay for a cremation?</u></a></li>
+            <li><a href=""><u>Can you prepay for a cremation funeral or memorial service?</u></a></li>
+            <li><a href=""><u>What are the options for prepaid cremation services?</u></a></li>
+            <li><a href=""><u>Can you prepay for final cemetery placement of cremated ashes?</u></a></li>
+            <li><a href=""><u>What are the benefits of prepaid cremation?</u></a></li>
+            <li><a href=""><u>How to prepay for a cremation</u></a></li>
+            <li><a href=""><u>What is a cremation society?</u></a></li>
+            <li><a href=""><u>What paperwork is required for a prepaid cremation?</u></a></li>
+            <li><a href=""><u>What happens if you prepay for a cremation and move?</u></a></li>
+        </ul>
+    </section>
+
+
+
+    <!-- Cremation Guide Section -->
+    <section class="relative bg-green-100 my-16">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between max-w-6xl mx-auto">
+
+                <!-- Left Image - Extending beyond section bounds -->
+                <div class="relative -mt-12 -mb-12 flex-shrink-0">
+                    <img src="./images/schedule_an_appointment.png" alt="Cremation Guide"
+                        class="w-64 h-80 object-cover rounded-lg shadow-lg">
+                </div>
+
+                <!-- Center Content -->
+                <div class="flex-1 px-8">
+                    <h1 class="text-2xl font-semibold text-left text-gray-800 mb-4">
+                        Discover how an advisor can help you plan and fund final arrangements in advance.
+                    </h1>
+                </div>
+
+                <!-- Right Button -->
+                <div class="flex-shrink-0">
+                    <button
+                        class="bg-teal-400 hover:bg-teal-500 text-white font-semibold  py-3 rounded-md transition-colors duration-200 shadow-md hover:shadow-lg">
+                        SCHEDULE AN APPOINTMENT
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="w-1/2 mx-auto text-gray-700">
+        <h1 class="md:text-4xl sm:text-xl pt-16">Can you prepay for a cremation?</h1>
+        <p class="pt-4">Yes, you can prepay for a cremation. By selecting a funeral or cremation provider in advance, not only can
+            you make your wishes known, <b>you can also prepay for the cremation services in installments</b>. Funeral
+            homes, cremation providers and cemeteries don't typically offer payment plans at the time of need, but you
+            are able to <a href=""><u>fund arrangements ahead of time with a payment plan</u></a>.</p>
+
+
+        <h1 class="pt-8 md:text-4xl sm:text-xl">Can you prepay for a cremation memorial or funeral service?</h1>
+        <p class="py-4">Yes. Not only can you prepay for the cremation itself, <b>most funeral homes also allow you to pay for the
+                memorial, funeral or celebration of life in advance</b>. This comes with the additional benefits of
+            funding your arrangements with a payment plan, plus it takes the burden of making arrangements off loved
+            ones during their time of grief. At funeral homes in the Dignity Memorial® family, you get the added benefit
+            of our Relocation Protection.</p>
+    </section>
+
+
+
+
+    <section class="w-1/2 mx-auto bg-green-100 text-center text-gray-700 my-8">
+        <p class="py-8 px-8 mx-auto">When you have a prepaid plan with a Dignity Memorial provider and move more than 75
+            miles away from where you live now, every detail of your plan moves with you. All of our prepaid plans are
+            fully transferable and will be honored by any one of more than 1,900 Dignity Memorial providers in North
+            America. That's a promise you won't find anywhere else.</p>
+    </section>
+
+
+
+
+    <section class="w-1/2 mx-auto py-8 text-gray-700">
+        <h1 class="md:text-4xl sm:text-xl py-8">What are the options for prepaid cremation services?</h1>
+        <p class=""><b>From simple cremation to celebration of life or traditional funeral services, there is virtually no limit
+                to the types of services offered for prepaid cremations</b>. Funeral homes typically offer packages
+            designed specifically for families choosing cremation to streamline the process. As always, they also offer
+            a la carte options so that individuals can design their services exactly the way they want them.</p>
+
+        <p>Packages might include:</p>
+
+        <ul class="list-disc px-8 py-4">
+            <li>A simple cremation without a service. Sometimes called direct cremation, this choice includes just the
+                basics, such as transportation of the deceased, a cremation casket and cremation paperwork.
+                <br>
+                We see this option chosen most often for individuals with just a few living friends or family, or in
+                situations when keeping costs down is most important.
+            </li>
+
+            <li class="py-4"><b>A cremation with a memorial service or celebration of life</b>. In addition to transportation of the
+                loved one and the cremation itself, this package usually includes a beautiful container for the ashes
+                and a service at the funeral home or a place of worship. These services can happen before, immediately
+                following or long after the cremation has taken place.
+                <br>
+                This option is an increasingly popular choice. We see it chosen most among families without a strong
+                desire to follow specific rituals, instead favoring remembrance of the good times and celebration of the
+                life lived. Families don't feel as rushed to schedule services immediately, giving more time to plan
+                travel. <a href=""><u>Learn more about celebrations of life</u></a>.
+            </li>
+
+
+            <li><b>A cremation with a funeral service</b>. In addition to transportation of the loved one and the
+                cremation itself, this usually includes embalming, hair and makeup services, a casket, a viewing at the
+                funeral home, and a funeral service before the cremation takes place.
+            </li>
+
+        </ul>
+
+
+        <p >We see this option chosen most often for individuals with a preference to follow traditional religious
+            rituals. Viewing or presence of the full body at the visitation or funeral sets this option apart.</p>
+
+
+
+
+
+        <h1 class="pt-16 md:text-4xl sm:text-xl">
+            Can you prepay for burial or placement of cremated ashes?
+        </h1>
+
+        <p class="py-8"><b>Yes, many people choose to prepay to have their ashes buried in a cemetery or placed in an outdoor or indoor niche</b>. Along with traditional urns, cremation containers and scattering tubes, more contemporary memorial options, such as cremation jewelry, glass and other keepsakes, ocean memorials or cremation spaceflights can also be prepaid. Do-it-yourself options like ash scattering typically cannot be prepaid.</p>
+
+        <p class=""><a href=""><u>Learn more about options for cremation burial or cemetery placement for cremation ashes.</u></a></p>
+
+
+    </section>
+
+
+
+      <!-- Quotation Section -->
+    <section class="bg-zinc-200 w-1/2 mx-auto py-8 px-4">
+        <img class="px-8" src="./images/quotation.png" alt="Quotation Image">
+        <p class="italic leading-7 py-8 px-8">“We recently moved. I packed my father's ashes. I could not find the urn for 3 months. Which meant I didn't sleep well for 3 months. I don't think I will keep ashes again. Just something to think about before you consider keeping ashes. I'm always worried about the urn.</p>
+        <p class="text-teal-300 font-bold px-8">—Karen Vandenberg Childs</p>
+
+    </section>
+
+
+
+
+    <section class="w-1/2 mx-auto py-8 text-gray-700">
+        <h1 class="md:text-4xl sm:text-xl pt-16">What are the benefits of prepaid cremation?</h1>
+
+        <p class="py-8">Paying for cremation in advance has many important benefits, including:</p>
+
+
+        <ol class="list-decimal px-8">
+            <li><b>Makes a difficult time easier for survivors</b>. Many people choose prepaid cremation because they want to reduce the burden on their family. By taking care of the details ahead of time, you minimize the number of potentially overwhelming decisions your loved ones face after your death.</li>
+            <li class="py-2"><b>Eases a financial burden</b>. Funding a funeral shortly after a death can be a financial hardship for many families. A prepaid cremation plan allows you to cover costs ahead of time, so your family doesn't have to think about money. Plus, you get the option to pay in <a href=""><u>affordable monthly installments</u></a>.</li>
+            <li><b>Ensures your wishes are honored</b>. By making arrangements in advance, you can be confident that you'll get the service you envision.</li>
+            <li class="py-2"><b>Protects against rising costs</b>. Most prepaid cremation plans include guaranteed pricing, which means that today's costs are locked in, protecting your loved ones from potentially higher costs in the future.</li>
+            <li><b>Gives you peace of mind</b>. Similar to insurance for the unexpected, a prepaid cremation can provide a sense of comfort. When you prepare in advance, you rest easier at night.</li>
+        </ol>
+
+        <p class="py-8"><a href=""><u>Read Why Prepaid Funerals Are the Best Gift for Your Children</u></a>.</p>
+
+
+
+
+        <h1 class="md:text-4xl sm:text-xl text-gray-700">How to prepay for a cremation</h1>
+        <p class="py-8">Here's how to prepay for a cremation:</p>
+        <ul class="list-disc px-8">
+            <li>Start by <a href=""><u>contacting</u></a> one or more funeral homes or cremation providers.</li>
+            <li class="py-2">Set an appointment with a pre-planning advisor, who will meet you at your home, at their location, or online or by phone. The advisor will explain their services, benefits and associated costs in about an hour. If you wish, you can make selections and make payment during the meeting, but it's not expected.</li>
+            <li>When you have decided which provider to use, you can then discuss payment options—usually a lump sum or installment payments—and whether to use insurance or a trust. In any case, the funds are protected from business disruption or bankruptcy.</li>
+        </ul>
+
+        <p class="py-8"><a href=""><u>Learn more about how prepaid funeral plans work</u></a>.</p>
+    </section>
+
+
+
+
+
+    <section class="py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Side - Guide Images -->
+                <img src="./images/form.png" alt="Planning guide" class="w-full">
+
+                <!-- Right Side - Form -->
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h2 class="text-3xl font-light text-gray-800 mb-6" style="font-family: 'Times New Roman', serif;">
+                        Plan a memorable cremation funeral
+                    </h2>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Planning a personalized cremation funeral or memorial is an event unlike any other. We created a guide to help you understand all of your cremation options and how to plan a truly memorable event. Understanding Cremation—A Complete Guide is free, and it will help you start planning today. Then, when you are ready, a Dignity Memorial provider will be there to walk you through every step of the cremation process.
+                    </p>
+
+                    <p class="py-4 text-gray-600">Get your free Buyer's Guide to Cemetery Property today. </p>
+
+                    <p class="text-sm text-gray-500 mb-6 italic">
+                        * indicates a required field
+                    </p>
+
+                    <form class="space-y-4">
+                        <!-- First Name -->
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">
+                                FIRST NAME *
+                            </label>
+                            <input type="text" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent">
+                        </div>
+
+                        <!-- Last Name -->
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">
+                                LAST NAME *
+                            </label>
+                            <input type="text" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent">
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">
+                                EMAIL *
+                            </label>
+                            <input type="email" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent">
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">
+                                PHONE NUMBER *
+                            </label>
+                            <input type="tel" required placeholder="+1"
+                                class="w-full px-3 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent">
+                        </div>
+
+                        <!-- Zip Code -->
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">
+                                ZIP CODE *
+                            </label>
+                            <input type="text" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent">
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit"
+                            class="w-full bg-teal-500 text-white py-3 px-6 rounded-none hover:bg-teal-600 transition-colors duration-300 font-medium uppercase tracking-wider mt-6">
+                            GET A FREE GUIDE & QUOTE
+                        </button>
+                    </form>
+
+                    <!-- Privacy Notice -->
+                    <p class="text-xs text-gray-500 mt-6 leading-relaxed">
+                        We will never sell your information or use it for any purpose except official Dignity Memorial
+                        correspondence. See our <a href="#" class="text-teal-600 hover:underline">privacy policy</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="w-1/2 mx-auto text-gray-700">
+        <h1 class="md:text-4xl sm:text-xl py-8">What is a cremation society? How does it work?</h1>
+        <p class="py-2">Years ago, a cremation society was an organization that helped facilitate prepaid cremations. Members paid a fee to join and got help planning their cremations and reduced rates on prepaid cremation services. The model changed to a more standard direct-to-consumer business model, but the name stuck.</p>
+        <p class="py-2">Today, <b>the word "society" is part of the names of some cremation providers that do simple cremations without services like viewings or memorials</b>. Their locations are usually small retail shops in larger cities, as opposed to full-service funeral homes that can offer spaces for gatherings. They usually do not offer permanent placement of ashes in a cemetery, nor do they coordinate celebrations of life or receptions. Neptune Society and National Cremation Society are the two largest cremation societies in the United States.</p>
+
+        <h1 class="md:text-4xl sm:text-xl py-8">What paperwork is required for a prepaid cremation?</h1>
+        <p>The only constant in life is change. When you choose a prepaid cremation plan at a Dignity Memorial provider and then move, the plan remains in effect. If you move more than 75 miles from the location where your original arrangements were made, your prearranged services—and your cremation trust—are transferable and will be honored at any of more than 1,900 providers in the United States and Canada. Learn more about The <a href=""><u>Dignity Difference</u></a>.</p>
+        <h3 class="md:text-2xl sm:text-sm pt-8">Plan an unforgettable tribute</h3>
+        <p class="pt-4">Whether you're planning a cremation for a loved one or pre-planning for yourself, start with a story, passion or pastime to provide inspiration. We'll help you weave those very special memories into a beautiful service with personal touches and lasting impressions.</p>
+    </section>
+
+
+ 
+    <hr class="w-1/2 mx-auto border-t-2 border-gray-300 my-8 mt-16">
+
+
+    <!-- Related Content -->
+    <section class="w-1/2 mx-auto px-4 py-8 my-8">
+
+        <h2 class="md:text-xl sm:text-sm italic">Related Content</h2>
+
+        <p class="py-2 pt-4"><a href=""><u>VA Burial Benefits</u></a></p>
+        <p class="py-2"><a href=""><u>Funeral Pre-Planning Meeting</u></a></p>
+        <p class="py-2"><a href=""><u>Cost of a Cremation Funeral</u></a></p>
+
+
+        <h3 class="pt-16 md:text-xl sm:text-sm font-normal">TAGS</h3>
+        <div class="flex gap-4 pt-6">
+            <!-- CEMETERY Button -->
+            <button
+                class="px-6 py-3 border-2 border-teal-400 bg-white text-gray-700 font-medium text-sm tracking-wide hover:bg-teal-50 transition-colors duration-200">
+                FINANCIAL PROTECTION
+            </button>
+
+            <!-- CREMATION Button -->
+            <button
+                class="px-6 py-3 border-2 border-teal-400 bg-white text-gray-700 font-medium text-sm tracking-wide hover:bg-teal-50 transition-colors duration-200">
+                MAKING PLANS
+            </button>
+
+             <!-- CREMATION Button -->
+            <button
+                class="px-6 py-3 border-2 border-teal-400 bg-white text-gray-700 font-medium text-sm tracking-wide hover:bg-teal-50 transition-colors duration-200">
+                CREMATION
+            </button>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <!-- Logo Section -->
+            <div class="text-center mb-8">
+                <div class="flex items-center justify-center mb-4">
+                    <span class="text-2xl text-gray-700 italic mr-4">Every Detail Remembered</span>
+                    <div class="w-px h-8 bg-gray-400 mx-4"></div>
+                    <span class="text-2xl text-gray-700 font-bold">Dignity</span>
+                    <span class="text-2xl text-gray-700">™</span>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div
+                class="flex flex-wrap justify-center gap-8 text-sm text-gray-600 uppercase tracking-wider font-sans mb-8">
+                <a href="#" class="hover:text-gray-800">ABOUT US</a>
+                <a href="#" class="hover:text-gray-800">CONTACT US</a>
+                <a href="#" class="hover:text-gray-800">CAREERS</a>
+                <a href="#" class="hover:text-gray-800">PRIVACY POLICY</a>
+                <a href="#" class="hover:text-gray-800">TERMS OF SERVICE</a>
+                <a href="#" class="hover:text-gray-800">ACCESSIBILITY</a>
+                <a href="#" class="hover:text-gray-800">DO NOT CALL</a>
+                <a href="#" class="hover:text-gray-800">
+                    <svg class="w-4 h-4 inline" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 9 5.16-.74 9-4.45 9-9V7l-10-5z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Copyright Footer -->
+    <footer class="bg-gray-700 py-6">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-gray-300 text-sm mb-4">© 2025 SCI SHARED RESOURCES, LLC. ALL RIGHTS RESERVED</p>
+            <p class="text-gray-400 text-xs mb-2">
+                <a href="#" class="hover:text-gray-300">Do Not Sell or Share My Personal Information</a>
+            </p>
+            <p class="text-gray-400 text-xs leading-relaxed max-w-4xl mx-auto">
+                This site is provided as a service of SCI Shared Resources, LLC. The Dignity Memorial brand name is used
+                to identify a network of licensed funeral, cremation and cemetery providers that include affiliates of
+                Service Corporation International, 1929 Allen Parkway, Houston, Texas. With over 2,000 locations,
+                Dignity Memorial providers proudly serve over 375,000 families a year.
+            </p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
