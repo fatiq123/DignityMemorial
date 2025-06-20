@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dignity Memorial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-serif text-gray-800">Dignity<sup class="text-sm">®</sup></h1>
+                    <span class="text-sm text-gray-600 ml-2">MEMORIAL</span>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <div class="relative group">
+                        <button id="planDropdownBtn"
+                            class="flex items-center space-x-1 text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors">
+                            <span class="text-sm font-medium tracking-wide">PLAN A FUNERAL OR CREMATION</span>
+                            <svg class="w-4 h-4 transition-transform duration-200" id="planDropdownArrow" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <!-- Dropdown Menu -->
+                        <div id="planDropdown"
+                            class="absolute top-full left-0 w-96 bg-white shadow-lg border border-gray-200 opacity-0 invisible transform translate-y-2 transition-all duration-200 z-50">
+                            <div class="p-8">
+                                <div class="grid grid-cols-2 gap-8">
+                                    <!-- Immediate Need Column -->
+                                    <div>
+                                        <h3 class="text-xl font-serif text-gray-800 mb-4">Immediate Need</h3>
+                                        <a href="#"
+                                            class="block text-teal-600 hover:text-teal-700 text-sm font-medium border-b border-teal-600 pb-1 mb-4 transition-colors">
+                                            Death has occurred or is near
+                                        </a>
+                                    </div>
+
+                                    <!-- Plan Ahead Column -->
+                                    <div>
+                                        <h3 class="text-xl font-serif text-gray-800 mb-4">Plan Ahead</h3>
+                                        <a href="#"
+                                            class="block text-teal-600 hover:text-teal-700 text-sm font-medium border-b border-teal-600 pb-1 mb-4 transition-colors">
+                                            Pre-plan a funeral or cremation
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#"
+                        class="text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors text-sm font-medium tracking-wide">
+                        FIND OBITUARIES AND SERVICES
+                    </a>
+
+                    <a href="#"
+                        class="text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors text-sm font-medium tracking-wide">
+                        FIND FUNERAL HOMES OR CEMETERIES
+                    </a>
+
+                    <div class="relative group">
+                        <button id="resourcesDropdownBtn"
+                            class="flex items-center space-x-1 text-gray-700 hover:text-gray-900 py-6 border-b-2 border-transparent hover:border-teal-400 transition-colors">
+                            <span class="text-sm font-medium tracking-wide">IDEAS AND RESOURCES</span>
+                            <svg class="w-4 h-4 transition-transform duration-200" id="resourcesDropdownArrow"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <!-- Resources Dropdown Menu -->
+                        <div id="resourcesDropdown"
+                            class="absolute top-full right-0 w-screen max-w-5xl bg-white shadow-lg border border-gray-200 opacity-0 invisible transform translate-y-2 transition-all duration-200 z-50">
+                            <div class="p-8">
+                                <div class="flex gap-8">
+                                    <!-- Left Column - Featured Content -->
+                                    <div class="w-1/3">
+                                        <div class="mb-6">
+                                            <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=300&h=200&fit=crop"
+                                                alt="Elderly couple on bench"
+                                                class="w-full h-32 object-cover rounded-lg mb-4">
+                                            <p class="text-xs text-gray-500 uppercase tracking-wide mb-2">FREE PRICING
+                                                GUIDE:</p>
+                                            <h3 class="text-lg font-serif text-gray-800 mb-3">Why pre-plan a funeral or
+                                                cremation?</h3>
+                                            <a href="#"
+                                                class="text-teal-600 hover:text-teal-700 text-sm font-medium">Learn
+                                                More</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Middle Column -->
+                                    <div class="w-1/3">
+                                        <div class="space-y-4">
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Prepaid
+                                                Funeral Plans</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Funeral
+                                                & Cremation Costs</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Cemetery
+                                                & Cremation Property</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Cremation</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Celebration
+                                                of Life</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Right Column -->
+                                    <div class="w-1/3">
+                                        <div class="space-y-4">
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Veterans
+                                                Burials & Funerals</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">When
+                                                Death Has Occurred</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Grief
+                                                & Sympathy</a>
+                                            <a href="#"
+                                                class="block text-gray-700 hover:text-gray-900 text-sm font-medium">Memorial
+                                                Services</a>
+                                        </div>
+
+                                        <div class="mt-8 pt-6 border-t border-gray-200">
+                                            <a href="#"
+                                                class="flex items-center text-teal-600 hover:text-teal-700 text-sm font-medium uppercase tracking-wide">
+                                                VIEW ALL RESOURCES
+                                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor"
+                                                    viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <button class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="bg-gray-50 border-b border-gray-200 py-3 px-8">
+        <div class="max-w-6xl mx-auto">
+            <ul class="flex items-center space-x-2 text-sm text-gray-600">
+                <li>
+                    <a href="#" class="hover:text-teal-600 transition duration-200">
+                        <span>HOME</span>
+                    </a>
+                </li>
+                <li class="flex items-center">
+                    <svg class="w-4 h-4 mx-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    <a href="#" class="hover:text-teal-600 transition duration-200">
+                        <span>MEMORIAL SERVICES</span>
+                    </a>
+                </li>
+                <li class="flex items-center">
+                    <svg class="w-4 h-4 mx-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    <a href="#" class="hover:text-teal-600 transition duration-200">
+                        <span>PLANNING A FUNERAL</span>
+                    </a>
+                </li>
+                <li class="flex items-center">
+                    <svg class="w-4 h-4 mx-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    <span class="text-gray-800 font-medium">CHOOSING A CASKET</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="relative h-[500px] bg-cover object-cover bg-no-repeat"
+        style="background-image: url('./images/hero.jpg');">
+        <!-- Overlay (optional, for darkening the image) -->
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+        <!-- Centered Text -->
+        <div
+            class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 w-3/5 mx-auto">
+            <h1 class="text-6xl font-bold mb-4">How To Choose a Casket</h1>
+        </div>
+
+    </section>
+
+
+
+    <div class="w-3/5 md:text-xl sm:text-sm mx-auto px-4 py-8 my-8 text-center text-gray-700">
+        <p>Choosing a casket for yourself or a family member can be an important decision. You may wonder why a casket,
+            which gets buried in the ground or sealed in a crypt, can cost so much. Materials matter, of course, but
+            caskets have emotional associations. Traditionally, a casket is the focal point of a funeral. Some think of
+            it as a final gift to their loved one. Others prioritize shelter of their loved one after burial. Many opt
+            to keep it simple. It's all a matter of personal preference.</p>
+    </div>
+
+
+    <hr class="w-1/4 mx-auto my-8 border-t-2 border-gray-300">
+
+
+
+    <section class="w-1/2 mx-auto px-4 py-8 my-8">
+        <p>Caskets come in a wide range of materials, colors, sizes and prices. From a plush, fabric-lined bronze casket
+            to an eco-friendly basket casket, the casket you choose may reflect your traditions, culture and
+            personality.</p>
+        <p class="py-4">In this article you will learn:</p>
+
+        <ul class="list-disc px-8 text-gray-700">
+            <li><a href=""><u>What a casket is</u></a></li>
+            <li><a href=""><u>How much a casket costs</u></a></li>
+            <li><a href=""><u>What to consider when choosing a casket</u></a></li>
+            <li><a href=""><u>Casket materials</u></a></li>
+            <li><a href=""><u>Casket features</u></a></li>
+            <li><a href=""><u>Why a burial vault is needed</u></a></li>
+            <li><a href=""><u>Whether you can be buried without a casket</u></a></li>
+        </ul>
+    </section>
+
+
+
+
+
+
+    <section class="w-1/2 mx-auto px-4 py-8 my-8 text-gray-700">
+        <h1 class="md:text-4xl sm:text-xl">What is a casket?</h1>
+        <p class="py-4">A casket is a container that holds the body of a person who has passed away. It's <b>used during
+                a visitation before a funeral or memorial</b> to allow family and friends an opportunity to say a final
+            goodbye to their loved one. After the service, the casket is <b>transported to the cemetery</b> and buried
+            in the ground or placed in a mausoleum.</p>
+        <p class="py-4">Though caskets are typical when <b>a family chooses traditional burial, a family who chooses
+                cremation may want a service with the loved one present</b> before the cremation. In that case, a family
+            may rent a nice casket for the service; the loved one would be cremated afterward in another container. The
+            family may also opt to purchase a casket built especially for cremation that can be displayed at a service
+            and go into a crematorium.</p>
+
+
+        <h1 class="md:text-4xl sm:text-xl">How much does a casket cost?</h1>
+        <p class="py-4">The cost of a casket ranges widely and depends on the materials used to build it and how much
+            it's customized. Ranging from $350 to upwards of $60,000 or more, caskets are available to fit every taste
+            and budget.</p>
+
+        <ul class="list-disc px-8 text-gray-700">
+            <li><b>A cardboard casket for cremation</b> may cost only a few hundred dollars.</li>
+            <li><b>A simple wooden casket for cremation or burial</b> can often be purchased for less than $1,000.</li>
+            <li><b>Popular styles of traditional caskets</b> usually cost between $1,500 and $4,000.</li>
+            <li><b>An elegant bronze casket</b> may cost $60,000 or more. </li>
+        </ul>
+
+        <p class="pt-4">You can purchase caskets from casket stores, big-box stores and online retailers, but most
+            families choose to get their caskets from their funeral homes. It's more convenient and generally comes with
+            a quality assurance from the manufacturer used by the funeral home. Your Dignity Memorial® advisor can help
+            you find a casket that fits your needs.</p>
+
+
+
+        <h1 class="md:text-xl sm:text-sm py-16 w-4/5 text-center mx-auto">The average cost of a casket is a little more
+            than $2,000, according to the Federal Trade Commission. </h1>
+
+        <hr class="w-2/5 mx-auto border-t-2 border-gray-300">
+
+
+
+
+
+        <h1 class="md:text-4xl pt-8 sm:text-xl">What to consider when choosing a casket</h1>
+        <p class="py-4">Whether you're interested in understated or ornate, <b>there are several factors in addition to
+                style to consider</b> as you make your decision. These include:</p>
+
+        <ul class="list-disc px-8 text-gray-700">
+            <li><b>Personal wishes</b>: If your family is more traditional, you might decide to go with a classic steel,
+                bronze or wood casket. If you're environmentally conscious, there are other options. Think about whether
+                you or your loved one takes a less-is-more or a more-is-more approach to life. A casket can be sleek and
+                simple or beautifully adorned and detailed. A casket can <b>reflect individual preferences and
+                    personality</b>.</li>
+            <li><b>Budget</b>: The casket may be one of the more expensive aspects of a funeral, so considering your
+                budget is important. <b>Caskets come in a wide range of prices</b>, and how much you want to spend is up
+                to you. Talk with your funeral director about what you'd like to spend—he or she can help you find a
+                casket that meets most budgets.</li>
+            <li><b>Cemetery requirements</b>: Cemetery rules about burial containers vary from location to location.
+                <b>Most cemeteries require some kind of casket</b>, though green cemeteries may not. Have your funeral
+                director check the requirements of the cemetery where you or your loved one will be buried or interred
+                before you purchase a casket.</li>
+        </ul>
+
+        <p class="pt-4">You can purchase caskets from casket stores, big-box stores and online retailers, but most
+            families choose to get their caskets from their funeral homes. It's more convenient and generally comes with
+            a quality assurance from the manufacturer used by the funeral home. Your Dignity Memorial® advisor can help
+            you find a casket that fits your needs.</p>
+
+        <div class="mx-auto w-1/2 text-center py-8">
+            <button
+                class="px-6 py-3 border-2 bg-teal-400 text-gray-700 font-medium text-sm tracking-wide hover:bg-teal-50 transition-colors duration-200">
+                SEE OUR COLLECTION
+            </button>
+        </div>
+
+
+
+
+
+
+
+        <h1 class="md:text-4xl pt-8 sm:text-xl">Casket materials </h1>
+        <p class="py-4">Caskets are made from all kinds of materials.</p>
+
+        <ul class="list-disc px-8 text-gray-700">
+            <li><b>Cloth-covered caskets</b> are the most economical option. Made from pressed plywood and covered with cloth, this type of casket is <b>an affordable choice</b>.</li>
+            <li><b>Laminate caskets</b> are made from plywood covered in a hardwood laminate. These caskets offer <b>the look of wood for a lower price than veneered or solid wood</b>.</li>
+            <li><b>Veneered wood caskets</b> are made from high-density fiberboard with a wood veneer. These caskets <b>look like solid wood without the price</b>.</li>
+            <li><b>Steel caskets</b> are available in various thicknesses, from 16 gauge (the thickest) to 20 gauge (the thinnest). Often finished with a glossy exterior, steel caskets are <b>more resistant to the elements than wood</b>.</li>
+            <li><b>Stainless steel caskets</b> are made with the strongest and least corrosive type of steel. These caskets are <b>more economical than copper or bronze</b>.</li>
+            <li><b>Solid wood caskets</b> are fashioned from solid wood such as mahogany, walnut, maple, cherry, oak, poplar or pine. The price depends on the variety of wood. Solid wood caskets offer a <b>stately, warm and traditional look</b>.</li>
+            <li><b>Copper or bronze caskets</b> are typically more expensive than other caskets. Copper and bronze are naturally rust resistant so <b>they are superior in strength</b>    .</li>
+            <li><b>Sustainably produced caskets are designed to easily decompose</b> when buried. Common materials include cork, wicker, banana leaf, recycled cardboard, organic cotton and hemp.</li>
+        </ul>
+
+        <h1 class="md:text-xl sm:text-sm py-16 w-4/5 text-center mx-auto">The leading factor in the choice of a casket is color. Our families often choose a particular casket because it comes in their loved one's favorite hue, such as purple, pink or blue.</h1>
+
+        <hr class="w-2/5 mx-auto border-t-2 border-gray-300">
+
+
+
+
+
+        <h1 class="md:text-4xl pt-8 sm:text-xl">Casket features</h1>
+        <p class="py-4">Not only can you choose the material a casket is made of, you can also personalize the casket in so many ways. Some of the more popular options for personalization* include:</p>
+
+        <ul class="list-disc px-8 text-gray-700">
+            <li><b>Lid</b>: Choose between a partial opening (half couch) or full opening (full couch) to allow family and friends to see their loved one during a viewing, visitation or open-casket funeral.</li>
+            <li><b>Lining</b>: Different caskets have different linings. Some have a simple tan crepe; others might have a luxurious champagne velvet, shining pink satin or even camouflage print.</li>
+            <li><b>Exterior ornaments</b>: Finishing touches can include handles, designs, corner pieces and emblems. If your loved one <a href=""><u>served in the military</u></a>, you might choose to honor them with a service-specific emblem. Corner pieces come in a number of designs, from crosses to golf clubs to gardening tools. They are often removed before burial or interment and kept by family members as keepsakes.</li>
+            <li><b>Memory box</b>: Throughout life, we collect many treasured and meaningful memories. Some caskets include a memory box where you can place your loved one's precious mementos.</li>
+            <li><b>Engraving</b>: An engraving might feature a Bible verse, artwork, poems, emblems or song lyrics.</li>
+            <li><b>Embroidery</b>: Various interior lid embroidery options are available to help you creatively remember a life lived.</li>
+            <li><b>Wraps</b>: There are companies that will wrap a casket with a high-resolution image or design printed on vinyl. The design often conveys a loved one's favorite hobby, sports team or band.</li>
+        </ul>
+
+        <p class="py-4">*Options vary by location and availability.</p>
+
+        <img src="./images/casket_features.jpg" alt="Casket Features">
+
+
+
+
+
+        <h1 class="md:text-4xl pt-8 sm:text-xl">Why is a burial vault needed?</h1>
+        <p class="py-4">When a casket is buried in the ground, the need for a burial vault or outer burial container is dependent on cemetery regulations. A burial vault protects the beauty of the cemetery by preventing the ground from settling over the burial location. Though a vault may help prevent sinking of the grave, no outer burial container can guarantee full protection from the elements.</p>
+
+        <h1 class="md:text-4xl pt-8 sm:text-xl">Can you be buried without a casket?</h1>
+        <p class="py-4">A casket isn't always necessary for burial. Like burial vaults, the requirement depends on the individual cemetery. Some cemeteries allow for natural burial, which is when a body is placed directly into the earth.</p>
+
+        <h1 class="md:text-4xl pt-8 sm:text-xl">Choosing a final resting place</h1>
+        <p class="py-4">Choosing a casket is just one part of making final arrangements. A Dignity Memorial advisor can also help you choose a <a href=""><u>final resting place</u></a>. Making plans in advance protects your loved ones from having to make decisions for you in an emotionally stressful time, and it gives you the peace of mind of knowing that your wishes have been communicated. We will walk you through the process and make sure your service honors your customs and traditions. </p>
+
+
+    </section>
+
+
+
+
+
+
+    <!-- Form Section -->
+    <section class="py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Side - Guide Images -->
+                <img src="./images/form.png" alt="Planning guide" class="w-full">
+
+                <!-- Right Side - Form -->
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h2 class="text-3xl font-light text-gray-800 mb-6" style="font-family: 'Times New Roman', serif;">
+                        Plan a beautiful, personal remembrance
+                    </h2>
+
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Each life is like no other. Particular passions, milestone moments and legacies created weave
+                        together to tell a story that is completely unique. <i>The Insider's Guide to Funeral &
+                            Cremation Planning</i> will walk you through inspirational ideas and the simple steps to
+                        planning an unforgettable memorial of a loved one's life—or your own when you plan in advance.
+                        Get started today.
+                    </p>
+
+                    <p class="text-sm text-gray-500 mb-6 italic">
+                        * indicates a required field
+                    </p>
+
+                    <form class="space-y-4">
+                        <!-- First Name -->
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">
+                                FIRST NAME *
+                            </label>
+                            <input type="text" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent">
+                        </div>
+
+
+                        <!-- Email -->
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">
+                                EMAIL *
+                            </label>
+                            <input type="email" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent">
+                        </div>
+
+
+                        <!-- Submit Button -->
+                        <button type="submit"
+                            class="w-full bg-teal-500 text-white py-3 px-6 rounded-none hover:bg-teal-600 transition-colors duration-300 font-medium uppercase tracking-wider mt-6">
+                            GET A FREE GUIDE & QUOTE    
+                        </button>
+                    </form>
+
+                    <!-- Privacy Notice -->
+                    <p class="text-xs text-gray-500 mt-6 leading-relaxed">
+                        We will never sell your information or use it for any purpose except official Dignity Memorial
+                        correspondence. See our <a href="#" class="text-teal-600 hover:underline">privacy policy</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <hr class="w-1/4 mx-auto my-8 border-t-2 border-gray-300">
+
+
+
+    <section class="w-1/2 mx-auto px-4 py-8 my-8">
+
+        <h2 class="md:text-xl sm:text-sm">Related Content</h2>
+
+        <p class="py-2"><a href=""><u>Funeral Pre-Planning Meeting</u></a></p>
+        <p class="py-2"><a href=""><u>Talking About Funeral Arrangements</u></a></p>
+        <p class="py-2"><a href=""><u>VA Burial Benefits</u></a></p>
+
+
+        <h3 class="pt-16 md:text-xl sm:text-sm font-normal">TAGS</h3>
+        <div class="flex gap-4 pt-6">
+            <!-- COST Button -->
+            <button
+                class="px-6 py-3 border-2 border-teal-400 bg-white text-gray-700 font-medium text-sm tracking-wide hover:bg-teal-50 transition-colors duration-200">
+                A DEATH HAS OCCURRED OR IS NEAR
+            </button>
+
+            <!-- CREMATION Button -->
+            <button
+                class="px-6 py-3 border-2 border-teal-400 bg-white text-gray-700 font-medium text-sm tracking-wide hover:bg-teal-50 transition-colors duration-200">
+                IDEAS FOR PLANNERS
+            </button>
+
+            <button
+                class="px-6 py-3 border-2 border-teal-400 bg-white text-gray-700 font-medium text-sm tracking-wide hover:bg-teal-50 transition-colors duration-200">
+                MAKING PLANS
+            </button>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <!-- Logo Section -->
+            <div class="text-center mb-8">
+                <div class="flex items-center justify-center mb-4">
+                    <span class="text-2xl text-gray-700 italic mr-4">Every Detail Remembered</span>
+                    <div class="w-px h-8 bg-gray-400 mx-4"></div>
+                    <span class="text-2xl text-gray-700 font-bold">Dignity</span>
+                    <span class="text-2xl text-gray-700">™</span>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div
+                class="flex flex-wrap justify-center gap-8 text-sm text-gray-600 uppercase tracking-wider font-sans mb-8">
+                <a href="#" class="hover:text-gray-800">ABOUT US</a>
+                <a href="#" class="hover:text-gray-800">CONTACT US</a>
+                <a href="#" class="hover:text-gray-800">CAREERS</a>
+                <a href="#" class="hover:text-gray-800">PRIVACY POLICY</a>
+                <a href="#" class="hover:text-gray-800">TERMS OF SERVICE</a>
+                <a href="#" class="hover:text-gray-800">ACCESSIBILITY</a>
+                <a href="#" class="hover:text-gray-800">DO NOT CALL</a>
+                <a href="#" class="hover:text-gray-800">
+                    <svg class="w-4 h-4 inline" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 9 5.16-.74 9-4.45 9-9V7l-10-5z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Copyright Footer -->
+    <footer class="bg-gray-700 py-6">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-gray-300 text-sm mb-4">© 2025 SCI SHARED RESOURCES, LLC. ALL RIGHTS RESERVED</p>
+            <p class="text-gray-400 text-xs mb-2">
+                <a href="#" class="hover:text-gray-300">Do Not Sell or Share My Personal Information</a>
+            </p>
+            <p class="text-gray-400 text-xs leading-relaxed max-w-4xl mx-auto">
+                This site is provided as a service of SCI Shared Resources, LLC. The Dignity Memorial brand name is used
+                to identify a network of licensed funeral, cremation and cemetery providers that include affiliates of
+                Service Corporation International, 1929 Allen Parkway, Houston, Texas. With over 2,000 locations,
+                Dignity Memorial providers proudly serve over 375,000 families a year.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
