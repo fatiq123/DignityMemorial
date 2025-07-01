@@ -161,8 +161,20 @@ loadComponent('plan-a-cremation-section', './components/plan-a-cremation-section
     }
 });
 
+// // Load celebration-of-life-section and initialize button
+// loadComponent('celebration-of-life-section', './components/celebration-of-life-section.html', function() {
+//     const section = document.getElementById('celebration-of-life-section');
+//     const learnMoreButton = section.querySelector('button[class*="bg-teal-400"]');
+    
+//     if (learnMoreButton) {
+//         learnMoreButton.addEventListener('click', function() {
+//             // Navigate to the celebration of life learn more page
+//             window.location.href = './celebration/celebration-of-life-learn-more.html';
+//         });
+//     }
+// });
+
 // Load remaining components without interactivity (or add callbacks as needed)
-loadComponent('celebration-of-life-section', './components/celebration-of-life-section.html');
 loadComponent('planning-a-head-section', './components/planning-a-head-section.html');
 loadComponent('cemetery-and-cremation-property', './components/cemetery-and-cremation-property.html');
 loadComponent('form-section', './components/form-section.html');
@@ -197,4 +209,3 @@ function performLocationSearch() {
         alert('Location search functionality would be implemented here for: ' + query);
     }
 }
-
